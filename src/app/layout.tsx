@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import { montserrat } from '@/lib/font'
+import Header from '@/components/header'
+import SideNav from '@/components/sidenav'
+import { SidebarContextProvider } from '../state/sidebarContext'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +16,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={montserrat.className}>
+        <SidebarContextProvider>
+          <Header />
+          <div className="md:hidden">
+            <SideNav />
+          </div>
+          <main>
+            {children}
+          </main>
+        </SidebarContextProvider>
+      </body>
+    </html >
   )
 }
