@@ -1,12 +1,12 @@
 export default function ContactSection() {
     
     return (
-        <section className="bg-dark flex flex-col gap-4 row-span-3">
+        <section className="bg-dark flex flex-col gap-4 lg:row-span-3 lg:col-auto animate-fade-up animate-duration-300 animate-delay-200">
             <header>
                 <h2>¿Sabes ya dónde encontrarnos?</h2>
             </header>
             <iframe
-                className="w-full flex-1 rounded-xl"
+                className="w-full flex-1 rounded-xl aspect-video"
                 referrerPolicy="no-referrer-when-downgrade"
                 src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBBt4vEsmJK9ZSl3p9D4c-J-99eTkFrEdo&q=D’Graná+Tapas&zoom=16`}
                 allowFullScreen

@@ -27,7 +27,7 @@ export default function Home() {
         <CarrouselSection />
       </Suspense>
 
-      <section>
+      <section className="lg:col-auto">
         <h2>test</h2>
       </section>
 

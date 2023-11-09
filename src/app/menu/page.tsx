@@ -4,10 +4,10 @@ export default function Menu() {
     const base = "/assets/platos"
 
     return (
-        <section className="self-center">
+        <section className="col-span-full p-0 border-none">
             <h1 className="text-sm font-extrabold text-dark">La carta del D&apos;Graná tapas (o el menú, pijo)</h1>
             <p className="text-4xl font-black mb-4 text-medium">¿Qué te apetece comer hoy?</p>
-            <div className="flex flex-col gap-4 md:flex-row md:flex-wrap">
+            <div className="grid gap-4 lg:grid-cols-3">
                 <Category name="Ensaladas" slug={`${base}/ensalada-bacon-queso-cabra.webp`} />
                 <Category name="Entrantes" slug={`${base}/patatas-bravas-caseras.webp`} />
                 <Category name="Principales" slug={`${base}/flamenquin-cordobes-casero.webp`} />

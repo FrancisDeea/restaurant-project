@@ -19,7 +19,7 @@ export default function CarrouselSection() {
     }, [gallery])
 
     return (
-        <section className="aspect-square p-0 overflow-hidden flex justify-center items-center">
+        <section className="aspect-square p-0 overflow-hidden flex justify-center items-center lg:col-auto">
             {
                 gallery ?
                     <Carousel indicators={false}>

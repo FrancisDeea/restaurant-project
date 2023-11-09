@@ -23,6 +23,6 @@ const config: Config = {
       light: "var(--misty-rose)",
     },
   },
-  plugins: [require("flowbite/plugin")  ],
+  plugins: [require("flowbite/plugin"), require('tailwindcss-animated')],
 };
 export default config;

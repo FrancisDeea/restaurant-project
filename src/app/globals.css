@@ -75,16 +75,22 @@ time {
 main {
   display: grid;
   place-content: center;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-columns: minmax(100%, 1fr);
   margin: auto;
   max-width: 1300px;
   min-height: calc(100vh - 48px);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 main > section {
   padding: 1.5rem;
   border: 1px solid black;
   border-radius: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr)
+  }
 }
