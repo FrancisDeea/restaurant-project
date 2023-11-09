@@ -1,11 +1,11 @@
-import menu from "./data";
+import { menu } from "./data";
+import { imagesFromMenu } from "./util";
 
-const getAllMenu = () => {
-    return menu;
-}
+export const getAllMenu = () => {
+  return menu;
+};
 
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-    getAllMenu
-}
+export const getGallery = () => {
+  const images = imagesFromMenu(menu)
+  return images
+};
