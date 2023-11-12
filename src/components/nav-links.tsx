@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function NavLinks({ handleClick }: { handleClick: () => void }) {
+export default function NavLinks({ handleClick }: { handleClick?: () => void }) {
 
     return (
         <nav>
