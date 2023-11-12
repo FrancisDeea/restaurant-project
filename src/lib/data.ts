@@ -2,7 +2,7 @@ import { FacebookIcon, GoogleIcon, InstagramIcon } from "@/lib/icons"
 import { Menu } from "./definitions";
 
 export const menu: Menu = {
-  salads: [
+  ensaladas: [
     {
       name: "Beicon",
       price: "9",
@@ -23,7 +23,7 @@ export const menu: Menu = {
     },
   ],
 
-  snacks: [
+  entrantes: [
     {
       name: "Twister de langostinos",
       price: "8.50",
@@ -88,7 +88,7 @@ export const menu: Menu = {
     },
   ],
 
-  dishes: [
+  principales: [
     {
       name: "Croquetas de la casa",
       price: "10 / 5",
@@ -144,7 +144,7 @@ export const menu: Menu = {
     },
   ],
 
-  asian: [
+  asiaticos: [
     {
       name: "Katsu sando D'Graná",
       price: "14",
@@ -200,7 +200,7 @@ export const menu: Menu = {
     },
   ],
 
-  fishes: [
+  pescados: [
     {
       name: "Cazón en adobo frito",
       price: "9.50",
@@ -230,7 +230,7 @@ export const menu: Menu = {
     },
   ],
 
-  demanding: [
+  exigentes: [
     {
       name: "Pluma ibérica BT",
       price: "15",
@@ -278,7 +278,7 @@ export const menu: Menu = {
     },
   ],
 
-  burguers: [
+  hamburguesas: [
     {
       name: "Ternera y buey (200gr)",
       price: "10.50",
@@ -299,7 +299,7 @@ export const menu: Menu = {
     },
   ],
 
-  desserts: [
+  postres: [
     {
       name: "Tarta de Queso de la Viña",
       price: "4.80",

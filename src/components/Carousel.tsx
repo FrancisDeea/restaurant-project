@@ -24,7 +24,7 @@ export default function CarrouselSection() {
                 gallery ?
                     <Carousel indicators={false}>
                         {
-                            gallery?.map((url, index) => {
+                            gallery?.sort(() => Math.random() - 1).map((url, index) => {
                                 return <img src={url} key={index} alt="Imágenes orientativas del menú" loading="lazy"></img>
                             })
                         }

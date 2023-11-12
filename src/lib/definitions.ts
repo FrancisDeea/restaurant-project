@@ -1,12 +1,12 @@
 export type FoodCategory =
-  | "salads"
-  | "snacks"
-  | "dishes"
-  | "asian"
-  | "fishes"
-  | "demanding"
-  | "burguers"
-  | "desserts";
+  | "ensaladas"
+  | "entrantes"
+  | "principales"
+  | "asiaticos"
+  | "pescados"
+  | "exigentes"
+  | "hamburguesas"
+  | "postres";
 
 export interface Plate {
   name: string;
