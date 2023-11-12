@@ -26,7 +26,7 @@ export default function SideNav() {
                     />
                     <p className="">¡Bienvenido!</p>
                     <hr className="mt-2 mb-6" />
-                    <NavLinks />
+                    <NavLinks handleClick={toggleActive} />
                     <hr className="mt-6 mb-2" />
                     <p className="">¡Sorpréndeme!</p>
 

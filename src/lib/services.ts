@@ -11,5 +11,5 @@ export const getMenuByCategory = (category: string) => {
 
 export const getGallery = () => {
   const images = imagesFromMenu(menu)
-  return images
+  return images.slice(0, 15)
 };
