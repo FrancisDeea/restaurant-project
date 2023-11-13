@@ -8,7 +8,14 @@ export const SidebarContextProvider = ({ children }) => {
   const [active, setActive] = useState(false);
 
   const toggleActive = () => {
-    setActive(prevState => !prevState)
+    if (active) {
+      setActive(false)
+      document.body.style.overflow = "auto"
+    } else {
+      setActive(true)
+      document.body.style.overflow = "hidden"
+    }
+    // setActive(prevState => !prevState)
   }
 
   return (

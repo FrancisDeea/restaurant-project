@@ -16,7 +16,7 @@ export default function SideNav() {
         <>
             <div
                 onClick={toggleActive}
-                className={`${toggleBackgroundStyle} absolute inset-0 bg-dark z-50 transition-opacity`}
+                className={`${toggleBackgroundStyle} fixed inset-0 bg-dark z-50 transition-opacity`}
             >
             </div>
             <aside className={`${toggleSidebarStyle} h-full w-[calc(100%-32px)] rounded-t-3xl flex flex-col justify-around bg-dark fixed top-4 z-[999] p-6 font-extrabold text-light text-xl overflow-hidden transition-all`}>
