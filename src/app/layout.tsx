@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <SidebarContextProvider>
           <Header />
-          <div className="md:hidden">
+          <div className="flex justify-center items-center md:hidden">
             <SideNav />
           </div>
           <main>

@@ -79,14 +79,14 @@ main {
   grid-template-columns: minmax(100%, 1fr);
   margin: auto;
   max-width: 1300px;
-  min-height: calc(100vh - 48px);
+  min-height: calc(100vh - 64px);
   padding: 1rem;
 }
 
 main > section {
   padding: 1.5rem;
   border: 1px solid black;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 1024px) {

@@ -6,7 +6,7 @@ import ToggleButton from "./toggleButton";
 export default function Header() {
 
     return (
-        <header className="bg-dark flex flex-row justify-around items-center h-12">
+        <header className="bg-dark flex flex-row justify-around items-center h-12 mt-4 max-w-[1268px] w-[calc(100%-32px)] m-auto rounded-full">
             <Link href="/">
                 <img
                     src="/assets/logo-dgrana-tapas-blanco.png"
