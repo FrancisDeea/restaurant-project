@@ -1,5 +1,7 @@
 import CardPlate from "@/components/CardPlate"
+import Link from "next/link"
 import { getAllMenu, getMenuByCategory } from "@/lib/services"
+import { urlDasher } from "@/lib/util"
 
 export function generateStaticParams() {
     const menu = getAllMenu()
@@ -16,14 +18,18 @@ export default function CategoryPage({ params }: { params: { category: string } 
             {
                 menuByCategory.map(plate => {
                     const { name, price, img, alt } = plate
+                    const slug = urlDasher(name)
+
                     return (
-                        <CardPlate
-                            key={name}
-                            name={name}
-                            price={price}
-                            img={img}
-                            alt={alt}
-                        />
+                        <Link href={`${category}/${slug}`}key={name} className="w-full"
+                        >
+                            <CardPlate
+                                name={name}
+                                price={price}
+                                img={img}
+                                alt={alt}
+                            />
+                        </Link>
                     )
                 })
             }

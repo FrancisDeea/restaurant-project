@@ -220,7 +220,7 @@ export const menu: Menu = {
     },
 
     {
-      name: "Pata de pulto",
+      name: "Pata de pulpo",
       price: "14.50",
       description:
         "Pata de pulpo salteada, cremoso de romesco y alioli de pimentón de La Vera.",
