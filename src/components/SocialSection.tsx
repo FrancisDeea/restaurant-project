@@ -10,7 +10,7 @@ const SocialNetwork = ({ link, children, color }: { link: string, children: Reac
 
 export default function SocialSection() {
     return (
-        <section className="bg-tranasparent flex flex-col gap-4 p-0 border-none text-dark font-bold text-xl lg:col-span-2 lg:flex-row animate-fade-up animate-duration-300 animate-delay-200">
+        <section className="bg-tranasparent flex flex-col gap-4 p-0 border-none text-dark font-bold text-xl lg:col-span-2 lg:flex-row animate-fade-up animate-duration-300 animate-delay-200 order-3 lg:order-none">
             {
                 socialNetworks.map(item => {
                     const Icon = item.icon
