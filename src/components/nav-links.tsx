@@ -8,7 +8,7 @@ export default function NavLinks({ handleClick }: { handleClick?: () => void }) 
                 
                 <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href="/">Home</Link></li>
                 <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href="/menu">Carta</Link></li>
-                <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href="">Contacto</Link></li>
+                <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href="#contact">Contacto</Link></li>
             </ul>
         </nav>
     )

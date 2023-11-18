@@ -2,7 +2,7 @@ import { socialNetworks } from "@/lib/data"
 
 const SocialNetwork = ({ link, children, color }: { link: string, children: React.ReactNode, color: string }) => {
     return (
-        <a href={link} className={`${color} h-12 lg:flex-1 rounded-[40px] flex flex-row gap-2 justify-center items-center text-white hover:scale-95 transition-transform`}>
+        <a href={link} className={`${color} h-12 lg:flex-1 rounded-[40px] flex flex-row gap-2 justify-center items-center text-white hover:scale-95 transition-transform shadow-lg`}>
             {children}
         </a>
     )

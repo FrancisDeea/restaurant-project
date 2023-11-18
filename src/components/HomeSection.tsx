@@ -3,7 +3,7 @@ import Button from "./button"
 export default function HomeSection() {
 
     return (
-        <section id="home" className="flex justify-center items-center bg-[url('/bghome.webp')] bg-cover lg:col-span-2 animate-fade-up animate-once animate-duration-300 animate-ease-in-out">
+        <section id="home" className="flex justify-center items-center bg-[url('/bghome.webp')] bg-cover lg:col-span-2 animate-fade-up animate-once animate-duration-300 animate-ease-in-out shadow-lg">
             <header className="flex flex-col gap-3">
                 <h1 className="font-extrabold leading-9">
                     <span className="text-6xl text-light">D&apos;Graná Tapas</span><br />

@@ -1,7 +1,7 @@
 export default function ContactSection() {
     
     return (
-        <section className="bg-dark flex flex-col gap-4 lg:row-span-3 lg:col-auto animate-fade-up animate-duration-300 animate-delay-200 order-last lg:order-none">
+        <section id="contact" className="bg-dark flex flex-col gap-4 lg:row-span-3 lg:col-auto animate-fade-up animate-duration-300 animate-delay-200 order-last lg:order-none shadow-lg">
             <header>
                 <h2>¿Sabes ya dónde encontrarnos?</h2>
             </header>

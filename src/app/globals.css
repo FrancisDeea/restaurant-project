@@ -39,6 +39,10 @@
   }
 } */
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   color: ghostwhite;
   background: linear-gradient(
@@ -99,7 +103,6 @@ main {
 
 main > section {
   padding: 1.5rem;
-  border: 1px solid black;
   border-radius: 30px;
 }
 
