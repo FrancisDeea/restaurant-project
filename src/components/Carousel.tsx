@@ -9,8 +9,6 @@ import Loading from './Loading';
 export default function CarrouselSection() {
     const [gallery, setGallery] = useState<string[] | null>(null)
 
-    console.log(gallery)
-
     useEffect(() => {
         if (!gallery) {
             const images = getGallery()
