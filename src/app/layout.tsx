@@ -16,7 +16,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://restaurant-project-plum.vercel.app/logo-dgrana-tapas.png"
+        url: "https://restaurant-project-plum.vercel.app/logo-dgrana-tapas.png",
+        width: 500,
+        height: 500
       }
     ]
   }
