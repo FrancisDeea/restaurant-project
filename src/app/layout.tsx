@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   keywords: ['Restaurante', 'Bar', 'Tapas', 'Torremolinos'],
   referrer: 'strict-origin-when-cross-origin',
   openGraph: {
-    images: ["https://restaurant-project-plum.vercel.app/logo-dgrana-tapas.png"]
+    images: "/logo-dgrana-tapas.png"
   }
 }
 
