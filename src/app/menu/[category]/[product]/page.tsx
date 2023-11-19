@@ -22,13 +22,15 @@ export default function ProductPage({ params }: { params: { category: string, pr
     if (!product) return null
 
     return (
-        <FullCardPlate
-            name={product.name}
-            img={product.img}
-            alt={product.alt}
-            price={product.price}
-            description={product.description}
-            allergens={product.allergens}
-        />
+        <>
+            <FullCardPlate
+                name={product.name}
+                img={product.img}
+                alt={product.alt}
+                price={product.price}
+                description={product.description}
+                allergens={product.allergens}
+            />
+        </>
     )
 }

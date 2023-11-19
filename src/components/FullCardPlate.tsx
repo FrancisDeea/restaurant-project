@@ -13,7 +13,7 @@ interface Plate {
 export default function FullCardPlate({ img, alt, name, price, description, allergens }: Plate) {
 
     return (
-        <article className="w-full max-w-[396px] h-[calc(100vh-96px)] bg-black rounded-[40px] overflow-hidden">
+        <article className="w-full max-w-[396px] h-[calc(100vh-96px)] bg-black rounded-[40px] overflow-hidden place-self-center lg:col-start-2">
             <div className="h-[60%] w-full overflow-hidden">
                 <img
                     className="h-full w-full object-cover"
