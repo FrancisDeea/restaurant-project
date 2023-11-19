@@ -2,7 +2,10 @@ import Category from "@/components/category";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Carta"
+    title: "Menú",
+    openGraph: {
+        title: "Menú | D\'Graná Tapas Torremolinos"
+    }
 }
 
 export default function Menu() {
