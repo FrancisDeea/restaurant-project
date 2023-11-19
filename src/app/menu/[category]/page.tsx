@@ -11,8 +11,9 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params: { category } }: { params: { category: string } }) {
+    const formatedTitle = category.charAt(0).toUpperCase() + category.slice(1)
     return { 
-        title: category
+        title: formatedTitle
     }
 }
 
