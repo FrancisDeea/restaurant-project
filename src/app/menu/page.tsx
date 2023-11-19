@@ -1,4 +1,9 @@
 import Category from "@/components/category";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Carta"
+}
 
 export default function Menu() {
     const base = "/assets/platos"
