@@ -15,7 +15,6 @@ export const SidebarContextProvider = ({ children }) => {
       setActive(true)
       document.body.style.overflow = "hidden"
     }
-    // setActive(prevState => !prevState)
   }
 
   return (

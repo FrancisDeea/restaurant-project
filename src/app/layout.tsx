@@ -1,8 +1,26 @@
 import './globals.css'
+import type { Metadata } from 'next'
 import { montserrat } from '@/lib/font'
 import Header from '@/components/header'
 import SideNav from '@/components/sidenav'
 import { SidebarContextProvider } from '../state/sidebarContext'
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | D\'Graná Tapas Torremolinos',
+    default: 'D\'Graná Tapas Torremolinos'
+  },
+  description: 'Cocina mediterránea y asiática. Productos frescos y caseros. Tapas y platos en Torremolinos, Málaga.',
+  keywords: ['Restaurante', 'Bar', 'Tapas', 'Torremolinos'],
+  referrer: 'strict-origin-when-cross-origin',
+  openGraph: {
+    images: [
+      {
+        url: "/logo-dgrana-tapas.png"
+      }
+    ]
+  }
+}
 
 
 export default function RootLayout({
