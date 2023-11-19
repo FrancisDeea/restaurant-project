@@ -1,5 +1,6 @@
 import CardPlate from "@/components/CardPlate"
 import Link from "next/link"
+import type { Metadata } from "next"
 import { getAllMenu, getMenuByCategory } from "@/lib/services"
 import { urlDasher } from "@/lib/util"
 
@@ -7,6 +8,12 @@ export function generateStaticParams() {
     const menu = getAllMenu()
 
     return Object.keys(menu).map(category => ({ category: category }))
+}
+
+export function generateMetadata({ params: { category } }: { params: { category: string } }) {
+    return { 
+        title: category
+    }
 }
 
 export default function CategoryPage({ params }: { params: { category: string } }) {
@@ -21,7 +28,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
                     const slug = urlDasher(name)
 
                     return (
-                        <Link href={`${category}/${slug}`}key={name} className="w-full"
+                        <Link href={`${category}/${slug}`} key={name} className="w-full"
                         >
                             <CardPlate
                                 name={name}
