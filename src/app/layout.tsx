@@ -4,6 +4,7 @@ import { montserrat } from '@/lib/font'
 import Header from '@/components/header'
 import SideNav from '@/components/sidenav'
 import { SidebarContextProvider } from '../state/sidebarContext'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +38,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <Footer />
         </SidebarContextProvider>
       </body>
     </html >

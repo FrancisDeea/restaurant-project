@@ -54,6 +54,10 @@ body {
   font-weight: bold;
 }
 
+#aviso {
+  text-wrap: initial;
+}
+
 .pride {
   background: linear-gradient(
     90deg,
