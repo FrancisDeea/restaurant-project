@@ -3,6 +3,7 @@
 
 import { useSidebar } from "@/hooks/useSidebar";
 import NavLinks from "./nav-links";
+import Link from 'next/link'
 import { IconSquareX } from '@tabler/icons-react';
 
 export default function SideNav() {
@@ -31,7 +32,7 @@ export default function SideNav() {
                     <hr className="mt-2 mb-6" />
                     <NavLinks handleClick={toggleActive} />
                     <hr className="mt-6 mb-2" />
-                    <p className="">¡Sorpréndeme!</p>
+                    <Link href="/sorprendeme">¡Sorpréndeme!</Link>
 
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">

@@ -1,4 +1,12 @@
-import { Menu } from "./definitions";
+import { Menu, Plate } from "./definitions";
+
+export const allPlatesInArray = (obj: Menu): Plate[] => {
+  let result: Plate[] = [];
+  for (let category in obj) {
+    obj[category as keyof typeof obj].forEach((item) => result.push(item));
+  }
+  return result;
+};
 
 export const imagesFromMenu = (obj: Menu): string[] => {
   const images: string[] = [];
@@ -61,5 +69,5 @@ export function findAllergens(allergen: string) {
 }
 
 export const urlDasher = (name: string): string => {
-  return name.toLowerCase().replaceAll(/\s/g, "-")
-}
+  return name.toLowerCase().replaceAll(/\s/g, "-");
+};
