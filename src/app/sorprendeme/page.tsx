@@ -1,26 +1,42 @@
+'use client'
 
-import FullCardPlate from "@/components/FullCardPlate"
-import { allPlatesInArray } from "@/lib/util"
+import RandomFullCardPlate from "@/components/RandomFullCardPlate"
+import { allPlatesInArray, getRandomIndex } from "@/lib/util"
 import { menu } from "@/lib/data"
+import { useRouter } from "next/navigation"
+import { useEffect, useState, useCallback } from "react"
 import { unstable_noStore as noStore } from "next/cache"
+import Loading from "./loading"
 
-export default async function RandomProduct() {
-    noStore()
-    const products = await allPlatesInArray(menu)
-    const randomIndex = Math.floor(Math.random() * products.length)
-    const product = products[randomIndex]
-    
-    if (!product) return null
+export default function RandomProduct() {
+    const allProducts = allPlatesInArray(menu)
+    const [index, setIndex] = useState<number | null>(null)
+
+    const handleIndex = useCallback(() => {
+        const randomIndex = getRandomIndex(allProducts.length)
+        setIndex(randomIndex)
+    }, [allProducts.length])
+
+    useEffect(() => {
+        if (!index) {
+            handleIndex()
+        }
+    }, [index, handleIndex])
+
+    if (!index) return null
+
+    const product = allProducts[index]
 
     return (
         <>
-            <FullCardPlate
+            <RandomFullCardPlate
                 name={product.name}
                 img={product.img}
                 alt={product.alt}
                 price={product.price}
                 description={product.description}
                 allergens={product.allergens}
+                handleIndex={handleIndex}
             />
         </>
     )

@@ -1,5 +1,7 @@
 import { Menu, Plate } from "./definitions";
 
+export const getRandomIndex = (max: number): number => Math.floor(Math.random() * max)
+
 export const allPlatesInArray = (obj: Menu): Plate[] => {
   let result: Plate[] = [];
   for (let category in obj) {
