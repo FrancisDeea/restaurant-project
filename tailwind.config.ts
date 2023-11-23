@@ -11,10 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        homebg: "linear-gradient(90deg, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .4) 100%),url('/assets/bghome.webp')",
         instagram:
           "linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
         dinamicInfo:
-          "linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);",
+          "linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%)",
         dinamicText1:
           "linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 33%, hsla(217, 100%, 50%, 1) 66%, hsla(186, 100%, 69%, 1) 100%)",
         dinamicText2:

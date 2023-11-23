@@ -357,7 +357,7 @@ export const socialNetworks = [
   {
     value: "Reseñas",
     color: `bg-red-500`,
-    url: "https://www.facebook.com/dgranatapas",
+    url: "https://maps.app.goo.gl/yQ2gJS59mQ1TTJcNA",
     icon: GoogleIcon
   },
 ];

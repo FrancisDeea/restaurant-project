@@ -50,7 +50,6 @@ body {
     var(--left-gradient) 0%,
     var(--right-gradient) 100%
   );
-  text-wrap: balance;
   font-weight: bold;
 }
 
@@ -86,8 +85,13 @@ h2 {
   font-weight: bold;
 }
 
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
 p {
   font-weight: 700;
+  text-wrap: pretty;
 }
 
 time {

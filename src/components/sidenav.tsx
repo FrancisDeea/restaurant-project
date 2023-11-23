@@ -25,7 +25,7 @@ export default function SideNav() {
                     <img
                         src="/assets/logo-dgrana-tapas-blanco.png"
                         alt="logotipo del restaurante"
-                        className="w-auto h-8 mb-6"
+                        className="w-auto h-10 mb-6"
                     />
                     <p className="">¡Bienvenido!</p>
                     <hr className="mt-2 mb-6" />

@@ -13,9 +13,8 @@ export default function ContactSection() {
                 loading="lazy">
             </iframe>
             <hr className="my-3" />
-            <div className="text-xl flex flex-col gap-4">
-                <time>Lunes: descanso personal</time>
-                <time>Martes: 20:00 a 00:00</time>
+            <div className="text-base lg:text-lg flex flex-col gap-4">
+                <time>Lunes y martes: descanso personal</time>
                 <time>Miercoles a Domingo: 12:00 a 16:00 / 20:00 a 00:00</time>
                 <address>Calle Casablanca, nº 30, local 2</address>
             </div>
