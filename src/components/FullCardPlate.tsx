@@ -19,6 +19,7 @@ export default function FullCardPlate({ img, alt, name, price, description, alle
                     className="h-full w-full object-cover"
                     alt={alt}
                     src={img}
+                    loading="lazy"
                 />
             </div>
             <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%]">
