@@ -16,7 +16,7 @@ export default function RandomFullCardPlate({ img, alt, name, price, description
 
     return (
         <article className="w-full max-w-[396px] h-[calc(100vh-96px)] bg-black rounded-[40px] overflow-hidden place-self-center lg:col-start-2 relative">
-            <button onClick={handleIndex} className="bg-purple-600/60 backdrop-blur-sm p-2 w-[90%] rounded-full border-black font-bold text-light text-lg block hover:scale-95 transition-transform absolute top-4 right-0 left-0 m-auto z-50">¡Sorpréndeme de nuevo!</button>
+            <button onClick={handleIndex} className="bg-purple-600/70 backdrop-blur-sm p-2 w-[90%] rounded-full border-black font-bold text-light text-lg block hover:scale-95 transition-transform absolute top-4 right-0 left-0 m-auto z-50">¡Sorpréndeme de nuevo!</button>
             <div className="h-[60%] w-full overflow-hidden">
                 <img
                     className="h-full w-full object-cover"

@@ -4,10 +4,12 @@
 import { useSidebar } from "@/hooks/useSidebar";
 import NavLinks from "./nav-links";
 import Link from 'next/link'
+import { useRouter } from "next/navigation";
 import { IconSquareX } from '@tabler/icons-react';
 
 export default function SideNav() {
     const { active, toggleActive } = useSidebar()
+    const router = useRouter()
 
     // const toggleSidebarStyle = active ? `visible w-60` : `invisible w-0`
     const toggleSidebarStyle = active ? `visible opacity-100` : `opacity-0 invisible h-0`
@@ -31,9 +33,7 @@ export default function SideNav() {
                     <p className="">¡Bienvenido!</p>
                     <hr className="mt-2 mb-6" />
                     <NavLinks handleClick={toggleActive} />
-                    <hr className="mt-6 mb-2" />
-                    <Link href="/sorprendeme">¡Sorpréndeme!</Link>
-
+                    <hr className="mt-6 mb-6" />
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">
                     <a href="https://instagram.com/dgranatapas" target="_blank">Instagram</a>

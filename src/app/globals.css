@@ -98,6 +98,10 @@ time {
   display: block;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 main {
   display: grid;
   place-content: center;
