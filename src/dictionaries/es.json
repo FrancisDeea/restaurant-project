@@ -1,0 +1,20 @@
+{
+    "homeSection": {
+        "subtitle": "Almuerzos y cenas",
+        "description": "Disfruta de tu bebida con tapa gratis, además de una amplia selección de platos y raciones. Al más puro estilo granadino y sin moverte de la costa del sol - Torremolinos, Málaga.",
+        "button": "Ver Menú"
+    },
+
+    "contactSection": {
+        "title": "¿Sabes ya dónde encontrarnos?",
+        "time1": "Lunes y martes: descanso personal",
+        "time2": "Miercoles a Domingo: 12:00 a 16:00 / 20:00 a 00:00"
+    },
+
+    "dinamicTextSection": {
+        "text1": "Bar de tapas. Restaurate Mediterráneo. Sabores asiáticos.",
+        "text2": "Ensaladilla rusa. Tortilla de patatas. Paella. Callos. Mini burguers. Fajitas. Rollitos primavera.",
+        "text3": "Productos frescos. Tapas caseras. 28 Platos elaborados.",
+        "text4": "Hamburguesas. Tostas. Secreto ibérico. Pulpo. Tartar de atún. Flamenquín. Huevos rotos. Pan Bao. Bravas."
+    }
+}

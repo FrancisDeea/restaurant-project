@@ -28,8 +28,6 @@ export default function middleware(request) {
     // Redirect if there is no locale
     const locale = getLocale(request)
 
-    if (locale === 'es') return
-
     request.nextUrl.pathname = `/${locale}${pathname}`
     // e.g. incoming request is /products
     // The new URL is now /en-US/products
@@ -38,6 +36,6 @@ export default function middleware(request) {
 
 export const config = {
     matcher: [
-        '/((?!api|_next/static|_next/image|favicon.ico).*)',
+        '/((?!api|_next/static|assets|_next/image|favicon.ico).*)',
     ],
 }

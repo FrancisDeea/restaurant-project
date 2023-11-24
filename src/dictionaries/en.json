@@ -1,0 +1,20 @@
+{
+    "homeSection": {
+        "subtitle": "Lunch and Dinner",
+        "description": "Enjoy your drink with a free tapa, as well as a wide selection of dishes and tapas. In the purest Granada style and without leaving the Costa del Sol - Torremolinos, Malaga.",
+        "button": "See Menu"
+    },
+
+    "contactSection": {
+        "title": "Do you know where to find us?",
+        "time1": "Monday and Tuesday: personal rest",
+        "time2": "Wednesday to Sunday: 12:00 to 16:00 / 20:00 to 00:00"
+    },
+
+    "dinamicTextSection": {
+        "text1": "Tapas bar. Mediterranean restaurant. Asian flavours.",
+        "text2": "Russian salad. Potatoes omelette. Paella. Callos. Mini burgers. Mexican rolls. Spring rolls.",
+        "text3": "Fresh produce. Homemade tapas. 28 Elaborated dishes.",
+        "text4": "Hamburgers. Toasts. Iberian pork. Octopus. Tuna tartar. Flamenquín. Scrambled eggs. Bao bread. Bravas."
+    }
+}

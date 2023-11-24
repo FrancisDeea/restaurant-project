@@ -8,7 +8,7 @@ const SocialNetwork = ({ link, children, color }: { link: string, children: Reac
     )
 }
 
-export default function SocialSection() {
+export default function SocialSection({ lang }: { lang: string }) {
     return (
         <section className="bg-tranasparent flex flex-col gap-4 p-0 border-none text-dark font-bold text-xl lg:col-span-2 lg:flex-row animate-fade-up animate-duration-300 animate-delay-200 order-3 lg:order-none">
             {
@@ -16,11 +16,11 @@ export default function SocialSection() {
                     const Icon = item.icon
                     return (
                         <SocialNetwork
-                            key={item.value}
+                            key={item.value_es}
                             link={item.url}
-                            color={item.value === "Instagram" ? "bg-instagram" : item.value === "Facebook" ? "bg-blue-500" : "bg-red-500"}
+                            color={item.value_es === "Instagram" ? "bg-instagram" : item.value_es === "Facebook" ? "bg-blue-500" : "bg-red-500"}
                         >
-                            <Icon /> {item.value}
+                            <Icon /> {lang === "en" ? item.value_en : item.value_es}
                         </SocialNetwork>
                     )
                 }

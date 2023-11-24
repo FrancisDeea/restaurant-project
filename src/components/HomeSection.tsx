@@ -1,6 +1,7 @@
 import Button from "./button"
+import { Dict } from "@/dictionaries/types"
 
-export default function HomeSection() {
+export default function HomeSection({ dict }: { dict: Dict }) {
 
     return (
         <section id="home" className="flex justify-center items-center bg-homebg bg-cover saturate-[1.3] lg:col-span-2 animate-fade-up animate-once animate-duration-300 animate-ease-in-out shadow-lg">
@@ -8,10 +9,10 @@ export default function HomeSection() {
                 <h1 className="font-extrabold leading-9">
                     <span className="text-6xl bg-dinamicText3 bg-clip-text text-transparent">D&apos;Graná Tapas</span><br />
                     <span className="pride">Torremolinos</span><br />
-                    <span className="text-white">Almuerzos y Cenas</span>
+                    <span className="text-white">{dict.homeSection.subtitle}</span>
                 </h1>
-                <p className="text-xl">Disfruta de tu bebida con tapa gratis, además de una amplia selección de platos y raciones. Al más puro estilo granadino y sin moverte de la costa del sol - Torremolinos, Málaga.</p>
-                <Button value="Ver Menú" url="/menu" />
+                <p className="text-xl">{dict.homeSection.description}</p>
+                <Button value={dict.homeSection.button} url="/menu" />
             </header>
         </section>
     )

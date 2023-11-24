@@ -1,9 +1,9 @@
-import './globals.css'
+import '../globals.css'
 import type { Metadata } from 'next'
 import { montserrat } from '@/lib/font'
 import Header from '@/components/header'
 import SideNav from '@/components/sidenav'
-import { SidebarContextProvider } from '../state/sidebarContext'
+import { SidebarContextProvider } from '../../state/sidebarContext'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {

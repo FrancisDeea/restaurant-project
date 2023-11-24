@@ -341,21 +341,24 @@ export const menu: Menu = {
 
 export const socialNetworks = [
   {
-    value: "Instagram",
+    value_es: "Instagram",
+    value_en: "Instagram",
     color: `bg-instagram`,
     url: "https://www.instagram.com/dgranatapas",
     icon: InstagramIcon
   },
 
   {
-    value: "Facebook",
+    value_es: "Facebook",
+    value_en: "Facebook",
     color: `bg-blue-500`,
     url: "https://www.facebook.com/dgranatapas",
     icon: FacebookIcon
   },
 
   {
-    value: "Reseñas",
+    value_es: "Reseñas",
+    value_en: "Reviews",
     color: `bg-red-500`,
     url: "https://maps.app.goo.gl/yQ2gJS59mQ1TTJcNA",
     icon: GoogleIcon
