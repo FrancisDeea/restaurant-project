@@ -6,13 +6,14 @@ let locales = ['es', 'en']
 let defaultLocale = 'es'
 
 export const getLocale = (request) => {
-    let languages = new Negotiator(request).languages()
+    let locale = request.headers.get('accept-language')
+    console.log(locale)
 
-    if (languages.length === 1 && languages[0] === '*') {
+    if (locale.startsWith('es')) {
         return defaultLocale
     }
-
-    return match(languages, locales, defaultLocale)
+    
+    return 'en'
 }
 
 export default function middleware(request) {
@@ -27,7 +28,7 @@ export default function middleware(request) {
     // Redirect if there is no locale
     const locale = getLocale(request)
 
-    if (locale === 'es') return 
+    if (locale === 'es') return
 
     request.nextUrl.pathname = `/${locale}${pathname}`
     // e.g. incoming request is /products
