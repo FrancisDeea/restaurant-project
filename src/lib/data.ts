@@ -308,10 +308,10 @@ export const menu: Menu = {
 
     {
       name_es: "Sacos de calabacín",
-      name_en: "Sacos de calabacín",
+      name_en: "Zucchini packets",
       price: "9",
       description_es: "Rellenos de bechamel de puerros y boletus.",
-      description_en: "Rellenos de bechamel de puerros y boletus.",
+      description_en: "Filled with leek bechamel and boletus",
       img: "/assets/platos/sacos de calabacin con bechamel de puerros y boletos.webp",
       alt: "sacos de calabacin rellenos",
       allergens: ["huevo", "lacteo"],
@@ -319,10 +319,10 @@ export const menu: Menu = {
 
     {
       name_es: "Gofre de pollo Crunchy",
-      name_en: "Gofre de pollo Crunchy",
+      name_en: "Crunchy chicken Waffle",
       price: "10.50",
       description_es: "Con queso americano cheddar, feta, mezclum y aove trufado.",
-      description_en: "Con queso americano cheddar, feta, mezclum y aove trufado.",
+      description_en: "With American cheese, feta, mezclum and truffled olive oil.",
       img: "/assets/platos/gofre-pollo-crunchy-queso-feta.webp",
       alt: "Gofre de pollo crujiente con queso feta y cheddar",
       allergens: ["gluten", "sesamo", "lacteo"],
@@ -332,10 +332,10 @@ export const menu: Menu = {
   hamburguesas: [
     {
       name_es: "Ternera y buey (200gr)",
-      name_en: "Ternera y buey (200gr)",
+      name_en: "Beef (200gr)",
       price: "10.50",
       description_es: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
-      description_en: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
+      description_en: "Goat cheese, caramelized onion, accompanied by potatoes.",
       img: "/assets/platos/hamburguesa-buey-queso-cabra.webp",
       alt: "Hamburguesa de ternera y buey",
       allergens: ["gluten", "sesamo", "lacteo"],
@@ -346,7 +346,7 @@ export const menu: Menu = {
       name_en: "Angus (200gr)",
       price: "12.50",
       description_es: "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
-      description_en: "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
+      description_en: "Double bacon, Cheddar cheese, Mix of lettuce and crunchy onion.",
       img: "/assets/platos/hamburguesa-angus.webp",
       alt: "Hamburguesa de angus",
       allergens: ["gluten", "sesamo", "lacteo", "mostaza"],
@@ -356,7 +356,7 @@ export const menu: Menu = {
   postres: [
     {
       name_es: "Tarta de Queso de la Viña",
-      name_en: "Tarta de Queso de la Viña",
+      name_en: "Baked Cheesecake",
       price: "4.80",
       description_es: null,
       description_en: null,
@@ -367,7 +367,7 @@ export const menu: Menu = {
 
     {
       name_es: "Coulant de Chocolate con helado de vainilla",
-      name_en: "Coulant de Chocolate con helado de vainilla",
+      name_en: "Chocolate Coulant with vanilla ice cream",
       price: "4.90",
       description_es: null,
       description_en: null,
@@ -378,10 +378,10 @@ export const menu: Menu = {
 
     {
       name_es: "Migas de Chocolate",
-      name_en: "Migas de Chocolate",
+      name_en: "Chocolate Crumbs",
       price: "5.50",
       description_es: "Con twist de Baileys y chocolate blanco, y helado de vainilla.",
-      description_en: "Con twist de Baileys y chocolate blanco, y helado de vainilla.",
+      description_en: "With Baileys and white chocolate twist, and vanilla ice cream.",
       img: "/assets/platos/migas-chocolate.webp",
       alt: "Migas de chocolate con twist de baileys y helado de vainilla",
       allergens: ["gluten", "lacteo", "huevo", "cascara"],
@@ -389,10 +389,10 @@ export const menu: Menu = {
 
     {
       name_es: "Postre de la semana",
-      name_en: "Postre de la semana",
+      name_en: "Homemade Dessert of the week",
       price: "5.50",
       description_es: "¡Pregunta por nuestro postre especial de la semana!",
-      description_en: "¡Pregunta por nuestro postre especial de la semana!",
+      description_en: "Ask for our special dessert of the week!",
       img: "/assets/platos/postre de la semana.webp",
       alt: "Postre especial de la semana",
       allergens: ["gluten", "lacteo", "huevo", "cascara"],

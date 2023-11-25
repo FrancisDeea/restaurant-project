@@ -28,6 +28,7 @@ export default function CategoryPage({ params }: { params: { category: string, l
                     const { price, img, alt } = plate
                     const name = lang === "es" ? plate.name_es : plate.name_en
                     const slug = urlDasher(plate.name_es)
+                    const cta = lang === "es" ? "Pulsa para más detalles" : "Tap for more details"
 
                     return (
                         <Link href={`${category}/${slug}`} key={name} className="w-full"
@@ -37,6 +38,7 @@ export default function CategoryPage({ params }: { params: { category: string, l
                                 price={price}
                                 img={img}
                                 alt={alt}
+                                cta={cta}
                             />
                         </Link>
                     )
