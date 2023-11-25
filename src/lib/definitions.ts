@@ -9,9 +9,11 @@ export type FoodCategory =
   | "postres";
 
 export interface Plate {
-  name: string;
+  name_es: string;
+  name_en: string;
   price: string;
-  description: string | null;
+  description_es: string | null;
+  description_en: string | null;
   img: string;
   alt: string;
   allergens: string[] | null;

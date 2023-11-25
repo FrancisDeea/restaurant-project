@@ -3,7 +3,9 @@ import Link from "next/link";
 import NavLinks from "./nav-links";
 import ToggleButton from "./toggleButton";
 
-export default function Header() {
+import { Dict } from "@/dictionaries/types";
+
+export default function Header({ dict }: { dict: Dict }) {
 
     return (
         <header className="bg-dark flex flex-row justify-around items-center h-12 mt-4 max-w-[1268px] w-[calc(100%-32px)] m-auto rounded-full">
@@ -15,7 +17,7 @@ export default function Header() {
                 />
             </Link>
             <div className="hidden md:block">
-                <NavLinks />
+                <NavLinks dict={dict} />
             </div>
 
             <div className="md:hidden">

@@ -4,19 +4,22 @@ import { Menu } from "./definitions";
 export const menu: Menu = {
   ensaladas: [
     {
-      name: "Beicon",
+      name_es: "Beicon",
+      name_en: "Bacon",
       price: "9",
-      description:
-        "Mix de lechugas, medallón de beicon y queso de cabra, frutos secos y salsa de miel y mostaza.",
+      description_es: "Mix de lechugas, medallón de beicon y queso de cabra, frutos secos y salsa de miel y mostaza.",
+      description_en: "Mixed lettuce, bacon and goat cheese medallion, nuts and honey mustard sauce.",
       img: "/assets/platos/ensalada-bacon-queso-cabra.webp",
       alt: "ensalada de bacon y queso de cabra",
       allergens: ["cascara", "mostaza", "sesamo", "lacteo", "sulfito"],
     },
 
     {
-      name: "Cesar",
+      name_es: "Cesar",
+      name_en: "Cesar",
       price: "9",
-      description: "Mix de lechugas, pollo, picatostes y escamas de parmesano.",
+      description_es: "Mix de lechugas, pollo, picatostes y escamas de parmesano.",
+      description_en: "Mix of lettuce, chicken, croutons and parmesan flakes.",
       img: "/assets/platos/ensalada-cesar.webp",
       alt: "ensalada cesar",
       allergens: ["gluten", "lacteo", "sulfito"],
@@ -25,63 +28,77 @@ export const menu: Menu = {
 
   entrantes: [
     {
-      name: "Twister de langostinos",
+      name_es: "Twister de langostinos",
+      name_en: "Prawn Twister",
       price: "8.50",
-      description: "6 Uds. con salsa sweet chili.",
+      description_es: "6 Uds. con salsa sweet chili.",
+      description_en: "6 pcs. with sweet chili sauce.",
       img: "/assets/platos/twistter-langostinos-crujientes.webp",
       alt: "twister de langostinos",
       allergens: ["soja", "crustaceo", "pescado", "gluten"],
     },
 
     {
-      name: "Lagrimitas de pollo",
+      name_es: "Lagrimitas de pollo",
+      name_en: "Chicken tears",
       price: "9.50",
-      description: "Con patatas fritas y salsa gaucha argentina.",
+      description_es: "Con patatas fritas y salsa gaucha argentina.",
+      description_en: "With french fries and Argentinean gaucha sauce.",
       img: "/assets/platos/lagrimas-pechuga-pollo.webp",
       alt: "lagrimitas de pollo",
       allergens: ["gluten", "huevo", "mostaza"],
     },
 
     {
-      name: "Bravas a la Camboria",
+      name_es: "Bravas a la Camboria",
+      name_en: "Bravas a la Camboria",
       price: "6",
-      description: "Papas fritas con salsa brava al estilo de Madrid.",
+      description_es: "Papas fritas con salsa brava al estilo de Madrid.",
+      description_en: "French fries with salsa brava Madrid style.",
       img: "/assets/platos/patatas-bravas-caseras.webp",
       alt: "papas bravas madrileñas",
       allergens: ["sesamo"],
     },
 
     {
-      name: "Roscas",
+      name_es: "Roscas",
+      name_en: "Roscas",
       price: "9",
-      description: "De jamón serrano ó de lomo, con tomate y queso.",
+      description_es: "De jamón serrano ó de lomo, con tomate y queso.",
+      description_en: "Serrano ham or loin, with tomato and cheese.",
       img: "/assets/platos/rosca-jamon-lomo-queso.webp",
       alt: "rosca de jamon o lomo de cerdo",
       allergens: ["gluten", "lacteo"],
     },
 
     {
-      name: "Milhojas con fuá de pato y queso de cabra",
+      name_es: "Milhojas con fuá de pato y queso de cabra",
+      name_en: "Millefeuille with duck and goat cheese fuá",
       price: "10",
-      description: null,
+      description_es: null,
+      description_en: null,
       img: "/assets/platos/milhojas-fua-queso-cabra.webp",
       alt: "Milhojas con fuá de pato y queso de cabra",
       allergens: ["gluten", "lacteo", "huevo"],
     },
 
     {
-      name: "Risotto",
+      name_es: "Risotto",
+      name_en: "Risotto",
       price: "10",
-      description: "De champiñones, solomillo y parmesano.",
+      description_es: "De champiñones, solomillo y parmesano.",
+      description_en: "Mushroom, sirloin and parmesan.",
       img: "/assets/platos/risotto-solomillo-setas.webp",
       alt: "risotto de solomillo",
       allergens: ["lacteo", "soja"],
     },
 
     {
-      name: "Cazuela de papas gratinadas",
+      name_es: "Cazuela de papas gratinadas",
+      name_en: "Potato casserole au gratin",
       price: "10",
-      description: "Papas fritas con mayonesa, beicon y 3 quesos gratinados.",
+      description_es: "Papas fritas con mayonesa, beicon y 3 quesos gratinados.",
+      description_en: "French fries with mayonnaise, bacon and 3 cheeses au gratin.",
       img: "/assets/platos/cazuela-papas-gratinadas-bacon.webp",
       alt: "cazuela de papas gratinadas con bacon",
       allergens: ["lacteo", "huevo"],
@@ -90,54 +107,66 @@ export const menu: Menu = {
 
   principales: [
     {
-      name: "Croquetas de la casa",
+      name_es: "Croquetas de la casa",
+      name_en: "House croquettes",
       price: "10 / 5",
-      description: "8 / 4 uds. de puchero, rabo de toro ó pollo al curry.",
+      description_es: "8 / 4 uds. de puchero, rabo de toro ó pollo al curry.",
+      description_en: "8 / 4 pcs. of stew, bull's tail or chicken curry.",
       img: "/assets/platos/croquetas-puchero-rabo-toro-curry.webp",
       alt: "croquetas caseras de la casa",
       allergens: ["lacteo", "huevo", "gluten"],
     },
 
     {
-      name: "Flamenquín Cordobés",
+      name_es: "Flamenquín Cordobés",
+      name_en: "Cordoban Flamenquín",
       price: "10",
-      description: "Relleno de lomo, jamón serrano, queso y pimiento.",
+      description_es: "Relleno de lomo, jamón serrano, queso y pimiento.",
+      description_en: "Stuffed with loin, serrano ham, cheese and bell pepper.",
       img: "/assets/platos/flamenquin-cordobes-casero.webp",
       alt: "flamenquin cordobes casero",
       allergens: ["lacteo", "huevo", "gluten"],
     },
 
     {
-      name: "Cazuela de huevos rotos y virutas de foie",
+      name_es: "Cazuela de huevos rotos y virutas de foie",
+      name_en: "Casserole of broken eggs and foie shavings",
       price: "10",
-      description: "Papas panaderas con virutas de jamón serrano y foie.",
+      description_es: "Papas panaderas con virutas de jamón serrano y foie.",
+      description_en: "Breaded potatoes with shavings of Serrano ham and foie.",
       img: "/assets/platos/cazuela-patatas-gratinadas-bacon.webp",
       alt: "huevos rotos con jamon y foie",
       allergens: ["lacteo", "huevo"],
     },
 
     {
-      name: "Tosta de Queso Cabra",
+      name_es: "Tosta de Queso Cabra",
+      name_en: "Goat Cheese Toast",
       price: "9.50",
-      description: "Queso de cabra, cebolla caramelizada y miel de caña.",
+      description_es: "Queso de cabra, cebolla caramelizada y miel de caña.",
+      description_en: "Goat cheese, caramelized onion and cane honey.",
       img: "/assets/platos/tosta-queso-cabra-cebolla-caramelizada.webp",
       alt: "tosta de queso de cabra y cebolla caramelizada",
       allergens: ["gluten", "lacteo", "sesamo"],
     },
 
     {
-      name: "Tosta de Pulpo",
+      name_es: "Tosta de Pulpo",
+      name_en: "Octopus Toast",
       price: "11",
-      description: "Pulpo con pimenton de la Vera, tomate y queso gratinado.",
+      description_es: "Pulpo con pimenton de la Vera, tomate y queso gratinado.",
+      description_en: "Octopus with paprika de la Vera, tomato and grilled cheese.",
       img: "/assets/platos/tosta de pulpo tomate y queso.webp",
       alt: "tosta de pulpo, tomate y queso gratinado.",
       allergens: ["gluten", "lacteo", "crustaceo", "pescado", "sesamo"],
     },
 
     {
-      name: "Tosta de Alioli Gratinado",
+      name_es: "Tosta de Alioli Gratinado",
+      name_en: "Alioli Gratin Toast",
       price: "8",
-      description: "Gratinado de alioli, parmesano y 3 quesos.",
+      description_es: "Gratinado de alioli, parmesano y 3 quesos.",
+      description_en: "Aioli, parmesan and 3 cheeses gratin.",
       img: "/assets/platos/tosta-pan-ajo-queso-cabra.webp",
       alt: "tosta de alioli gratinado, parmesano y tres quesos",
       allergens: ["gluten", "lacteo", "sesamo"],
@@ -146,47 +175,55 @@ export const menu: Menu = {
 
   asiaticos: [
     {
-      name: "Katsu sando D'Graná",
+      name_es: "Katsu sando D'Graná",
+      name_en: "Katsu sando D'Graná",
       price: "14",
-      description:
-        "Pan brioche, ensalada asiática, crujiente de pollo, mayo kimchi y teriyaki.",
+      description_es: "Pan brioche, ensalada asiática, crujiente de pollo, mayo kimchi y teriyaki.",
+      description_en: "Brioche bread, Asian salad, crispy chicken, kimchi mayo and teriyaki.",
       img: "/assets/platos/katsu-sando-dgrana-2.webp",
       alt: "Sandwich katsu sando d'grana",
       allergens: ["mostaza", "huevo", "gluten", "soja", "sesamo"],
     },
 
     {
-      name: "Tartar de Atún en crujiente de arroz",
+      name_es: "Tartar de Atún en crujiente de arroz",
+      name_en: "Tuna Tartar on crispy rice",
       price: "16",
-      description:
-        "Con emulsión de mango a nuestro estilo, aguacate y alga nori.",
+      description_es: "Con emulsión de mango a nuestro estilo, aguacate y alga nori.",
+      description_en: "With mango emulsion in our style, avocado and nori seaweed.",
       img: "/assets/platos/tartar atun crujiente arroz.webp",
       alt: "Sandwich katsu sando d'grana",
       allergens: ["lacteo", "pescado", "soja", "sesamo"],
     },
 
     {
-      name: "Pollo teriyaki",
+      name_es: "Pollo teriyaki",
+      name_en: "Teriyaki chicken",
       price: "11",
-      description: "Con arroz y salsa sweet chili.",
+      description_es: "Con arroz y salsa sweet chili.",
+      description_en: "With rice and sweet chili sauce.",
       img: "/assets/platos/pollo-teriyaki-arroz.webp",
       alt: "pollo teriyaki con arroz",
       allergens: ["lacteo", "huevo", "gluten"],
     },
 
     {
-      name: "Bao de solomillo ibérico",
+      name_es: "Bao de solomillo ibérico",
+      name_en: "Iberian sirloin Bao bread",
       price: "12",
-      description: "Con mayokimchi. 3 uds.",
+      description_es: "Con mayokimchi. 3 uds.",
+      description_en: "With mayokimchi. 3 pcs.",
       img: "/assets/platos/pan-bao-solomillo.webp",
       alt: "pan bao de solomillo",
       allergens: ["gluten", "huevo"],
     },
 
     {
-      name: "Wok de noodles Udon",
+      name_es: "Wok de noodles Udon",
+      name_en: "Udon noodle wok",
       price: "11",
-      description: "Pídelos de pollo, gambas ó mixto (+1€)",
+      description_es: "Pídelos de pollo, gambas ó mixto (+1€)",
+      description_en: "Ask for chicken, shrimp or mixed (+1€)",
       img: "/assets/platos/wok-noodles-udon-pollo-gambas.webp",
       alt: "wok de noodles udon con pollo y gambas",
       allergens: [
@@ -202,28 +239,33 @@ export const menu: Menu = {
 
   pescados: [
     {
-      name: "Cazón en adobo frito",
+      name_es: "Cazón en adobo frito",
+      name_en: "Marinated fried dogfish cubes",
       price: "9.50",
-      description: null,
+      description_es: null,
+      description_en: null,
       img: "/assets/platos/cazon-frito-adobo.webp",
       alt: "cazon frito en adobo",
       allergens: ["gluten", "pescado", "sulfito"],
     },
 
     {
-      name: "Almejas a la marinera",
+      name_es: "Almejas a la marinera",
+      name_en: "Clams marnière",
       price: "10.50",
-      description: null,
+      description_es: null,
+      description_en: null,
       img: "/assets/platos/almejas-marinera.webp",
       alt: "almejas a la marinera",
       allergens: ["crustaceo", "sulfito"],
     },
 
     {
-      name: "Pata de pulpo",
+      name_es: "Pata de pulpo",
+      name_en: "Octopus leg",
       price: "14.50",
-      description:
-        "Pata de pulpo salteada, cremoso de romesco y alioli de pimentón de La Vera.",
+      description_es: "Pata de pulpo salteada, cremoso de romesco y alioli de pimentón de La Vera.",
+      description_en: "Octopues leg over romesco sauce with garlic and paprika mayonnaise.",
       img: "/assets/platos/pata-pulpo-salsa-romesco.webp",
       alt: "pata de pulpo a la plancha con romesco",
       allergens: ["cascara", "sesamo", "sulfito", "pescado"],
@@ -232,46 +274,55 @@ export const menu: Menu = {
 
   exigentes: [
     {
-      name: "Pluma ibérica BT",
+      name_es: "Pluma ibérica BT",
+      name_en: "Iberian pork LT",
       price: "15",
-      description:
-        "Cocinada a baja temperatura, con jamón serrano y aceite trufado.",
+      description_es: "Cocinada a baja temperatura, con jamón serrano y aceite trufado.",
+      description_en: "Cooked at low temperature, with serrano ham, truffle oil and baked potatoes.",
       img: "/assets/platos/pluma-iberica-baja-temperatura.webp",
       alt: "pluma iberica a baja temperatura con patatas",
       allergens: null,
     },
 
     {
-      name: "Costillas de cerdo BBQ",
+      name_es: "Costillas de cerdo BBQ",
+      name_en: "BBQ pork ribs",
       price: "15",
-      description: "Cocinadas a baja temperatura con salsa bbq y papas.",
+      description_es: "Cocinadas a baja temperatura con salsa bbq y papas.",
+      description_en: "Cooked at low temperature with BBQ sauce and potatoes.",
       img: "/assets/platos/costilla-cerdo-bbq.webp",
       alt: "costillas de cerdo barbacoa",
       allergens: ["sesamo"],
     },
 
     {
-      name: "Milhojas",
+      name_es: "Milhojas",
+      name_en: "Millefeuilles",
       price: "10",
-      description: "Con queso de cabra, jamón serrano y confitura de mango.",
+      description_es: "Con queso de cabra, jamón serrano y confitura de mango.",
+      description_en: "With goat cheese, serrano ham and mango jam.",
       img: "/assets/platos/milhojas-queso-cabra-mango.webp",
       alt: "milhojas de queso cabra, mango y jamon",
       allergens: ["gluten", "lacteo"],
     },
 
     {
-      name: "Sacos de calabacín",
+      name_es: "Sacos de calabacín",
+      name_en: "Sacos de calabacín",
       price: "9",
-      description: "Rellenos de bechamel de puerros y boletus.",
+      description_es: "Rellenos de bechamel de puerros y boletus.",
+      description_en: "Rellenos de bechamel de puerros y boletus.",
       img: "/assets/platos/sacos de calabacin con bechamel de puerros y boletos.webp",
       alt: "sacos de calabacin rellenos",
       allergens: ["huevo", "lacteo"],
     },
 
     {
-      name: "Gofre de pollo Crunchy",
+      name_es: "Gofre de pollo Crunchy",
+      name_en: "Gofre de pollo Crunchy",
       price: "10.50",
-      description: "Con queso americano cheddar, feta, mezclum y aove trufado.",
+      description_es: "Con queso americano cheddar, feta, mezclum y aove trufado.",
+      description_en: "Con queso americano cheddar, feta, mezclum y aove trufado.",
       img: "/assets/platos/gofre-pollo-crunchy-queso-feta.webp",
       alt: "Gofre de pollo crujiente con queso feta y cheddar",
       allergens: ["gluten", "sesamo", "lacteo"],
@@ -280,19 +331,22 @@ export const menu: Menu = {
 
   hamburguesas: [
     {
-      name: "Ternera y buey (200gr)",
+      name_es: "Ternera y buey (200gr)",
+      name_en: "Ternera y buey (200gr)",
       price: "10.50",
-      description: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
+      description_es: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
+      description_en: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
       img: "/assets/platos/hamburguesa-buey-queso-cabra.webp",
       alt: "Hamburguesa de ternera y buey",
       allergens: ["gluten", "sesamo", "lacteo"],
     },
 
     {
-      name: "Angus (200gr)",
+      name_es: "Angus (200gr)",
+      name_en: "Angus (200gr)",
       price: "12.50",
-      description:
-        "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
+      description_es: "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
+      description_en: "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
       img: "/assets/platos/hamburguesa-angus.webp",
       alt: "Hamburguesa de angus",
       allergens: ["gluten", "sesamo", "lacteo", "mostaza"],
@@ -301,37 +355,44 @@ export const menu: Menu = {
 
   postres: [
     {
-      name: "Tarta de Queso de la Viña",
+      name_es: "Tarta de Queso de la Viña",
+      name_en: "Tarta de Queso de la Viña",
       price: "4.80",
-      description: null,
+      description_es: null,
+      description_en: null,
       img: "/assets/platos/tarta de queso viña.webp",
       alt: "Tarta de queso de la viña",
       allergens: ["lacteo"],
     },
 
     {
-      name: "Coulant de Chocolate con helado de vainilla",
+      name_es: "Coulant de Chocolate con helado de vainilla",
+      name_en: "Coulant de Chocolate con helado de vainilla",
       price: "4.90",
-      description: null,
+      description_es: null,
+      description_en: null,
       img: "",
       alt: "Coulant de chocolate con helado de vainilla",
       allergens: ["gluten", "lacteo", "huevo", "cascara"],
     },
 
     {
-      name: "Migas de Chocolate",
+      name_es: "Migas de Chocolate",
+      name_en: "Migas de Chocolate",
       price: "5.50",
-      description:
-        "Con twist de Baileys y chocolate blanco, y helado de vainilla.",
+      description_es: "Con twist de Baileys y chocolate blanco, y helado de vainilla.",
+      description_en: "Con twist de Baileys y chocolate blanco, y helado de vainilla.",
       img: "/assets/platos/migas-chocolate.webp",
       alt: "Migas de chocolate con twist de baileys y helado de vainilla",
       allergens: ["gluten", "lacteo", "huevo", "cascara"],
     },
 
     {
-      name: "Postre de la semana",
+      name_es: "Postre de la semana",
+      name_en: "Postre de la semana",
       price: "5.50",
-      description: "¡Pregunta por nuestro postre especial de la semana!",
+      description_es: "¡Pregunta por nuestro postre especial de la semana!",
+      description_en: "¡Pregunta por nuestro postre especial de la semana!",
       img: "/assets/platos/postre de la semana.webp",
       alt: "Postre especial de la semana",
       allergens: ["gluten", "lacteo", "huevo", "cascara"],

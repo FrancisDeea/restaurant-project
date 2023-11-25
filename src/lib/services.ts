@@ -9,9 +9,9 @@ export const getMenuByCategory = (category: string) => {
   return menu[category as keyof typeof menu]
 }
 
-export const getNamesInCategory = (category: string) => {
-  return menu[category as keyof typeof menu].map(plate => plate.name)
-}
+// export const getNamesInCategory = (category: string) => {
+//   return menu[category as keyof typeof menu].map(plate => plate.name)
+// }
 
 export const getGallery = () => {
   const images = imagesFromMenu(menu)

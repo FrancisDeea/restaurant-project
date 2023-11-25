@@ -16,5 +16,27 @@
         "text2": "Russian salad. Potatoes omelette. Paella. Callos. Mini burgers. Mexican rolls. Spring rolls.",
         "text3": "Fresh produce. Homemade tapas. 28 Elaborated dishes.",
         "text4": "Hamburgers. Toasts. Iberian pork. Octopus. Tuna tartar. Flamenquín. Scrambled eggs. Bao bread. Bravas."
+    },
+
+    "navLinks": {
+        "bienvenido": "Welcome!",
+        "home": "Home",
+        "carta": "Menu",
+        "contacto": "Contact",
+        "sorprendeme": "Surprise! 😯"
+    },
+
+    "categories": {
+        "title": "What do you feel like eating today?",
+        "subtitle": "D'Grana tapas' Menu",
+        "ensaladas": "Salads",
+        "entrantes": "Snacks",
+        "principales": "Dishes",
+        "asiaticos": "Asian",
+        "pescados": "Fishes",
+        "exigentes": "Demanding",
+        "hamburguesas": "Burguers",
+        "postres": "Desserts",
+        "bebidas": "Drinks"
     }
 }

@@ -16,5 +16,27 @@
         "text2": "Ensaladilla rusa. Tortilla de patatas. Paella. Callos. Mini burguers. Fajitas. Rollitos primavera.",
         "text3": "Productos frescos. Tapas caseras. 28 Platos elaborados.",
         "text4": "Hamburguesas. Tostas. Secreto ibérico. Pulpo. Tartar de atún. Flamenquín. Huevos rotos. Pan Bao. Bravas."
+    },
+
+    "navLinks": {
+        "bienvenido": "¡Bienvenido!",
+        "home": "Inicio",
+        "carta": "Carta",
+        "contacto": "Contacto",
+        "sorprendeme": "Sorpréndeme 😯"
+    },
+
+    "categories": {
+        "title": "¿Qué te apetece comer hoy?",
+        "subtitle": "La carta del D'Grana tapas",
+        "ensaladas": "Ensaladas",
+        "entrantes": "Entrantes",
+        "principales": "Principales",
+        "asiaticos": "Asiáticos",
+        "pescados": "Pescados",
+        "exigentes": "Exigentes",
+        "hamburguesas": "Hamburguesas",
+        "postres": "Postres",
+        "bebidas": "Bebidas"
     }
 }

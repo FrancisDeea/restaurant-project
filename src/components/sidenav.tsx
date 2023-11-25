@@ -6,8 +6,9 @@ import NavLinks from "./nav-links";
 import Link from 'next/link'
 import { useRouter } from "next/navigation";
 import { IconSquareX } from '@tabler/icons-react';
+import { Dict } from "@/dictionaries/types";
 
-export default function SideNav() {
+export default function SideNav({ dict }: { dict: Dict }) {
     const { active, toggleActive } = useSidebar()
     const router = useRouter()
 
@@ -30,9 +31,9 @@ export default function SideNav() {
                         alt="logotipo del restaurante"
                         className="w-auto h-10 mb-6"
                     />
-                    <p className="">¡Bienvenido!</p>
+                    <p className="">{dict.navLinks.bienvenido}</p>
                     <hr className="mt-2 mb-6" />
-                    <NavLinks handleClick={toggleActive} />
+                    <NavLinks handleClick={toggleActive} dict={dict} />
                     <hr className="mt-6 mb-6" />
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">

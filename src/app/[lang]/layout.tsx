@@ -1,10 +1,15 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import { montserrat } from '@/lib/font'
+
 import Header from '@/components/header'
 import SideNav from '@/components/sidenav'
-import { SidebarContextProvider } from '../../state/sidebarContext'
 import Footer from '@/components/Footer'
+
+import { SidebarContextProvider } from '../../state/sidebarContext'
+
+import { getDictionary } from './dictionaries'
+import { Dict } from '@/dictionaries/types'
 
 export const metadata: Metadata = {
   title: {
@@ -19,21 +24,22 @@ export const metadata: Metadata = {
   }
 }
 
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  params: { lang: string }
 }) {
-
+  const dict: Dict = await getDictionary(params.lang)
 
   return (
     <html lang="en">
       <body className={montserrat.className}>
         <SidebarContextProvider>
-          <Header />
+          <Header dict={dict} />
           <div className="flex justify-center items-center md:hidden">
-            <SideNav />
+            <SideNav dict={dict} />
           </div>
           <main>
             {children}
