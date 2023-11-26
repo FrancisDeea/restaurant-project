@@ -8,7 +8,7 @@ import { useEffect, useState, useCallback } from "react"
 import { unstable_noStore as noStore } from "next/cache"
 import Loading from "./loading"
 
-export default function RandomProduct() {
+export default function RandomProduct({ params: { lang } }: { params: { lang: string } }) {
     const allProducts = allPlatesInArray(menu)
     const [index, setIndex] = useState<number | null>(null)
 
@@ -26,15 +26,17 @@ export default function RandomProduct() {
     if (!index) return null
 
     const product = allProducts[index]
+    const name = lang === 'es' ? product.name_es : product.name_en
+    const description = lang === 'es' ? product.description_es : product.description_en
 
     return (
         <>
             <RandomFullCardPlate
-                name={product.name}
+                name={name}
                 img={product.img}
                 alt={product.alt}
                 price={product.price}
-                description={product.description}
+                description={description}
                 allergens={product.allergens}
                 handleIndex={handleIndex}
             />
