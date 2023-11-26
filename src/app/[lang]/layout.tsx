@@ -34,12 +34,12 @@ export default async function RootLayout({
   const dict: Dict = await getDictionary(params.lang)
 
   return (
-    <html lang="en">
+    <html lang={`${params.lang}`}>
       <body className={montserrat.className}>
         <SidebarContextProvider>
-          <Header dict={dict} />
-          <div className="flex justify-center items-center md:hidden">
-            <SideNav dict={dict} />
+          <Header dict={dict} lang={params.lang} />
+          <div className="flex justify-center items-center lg:hidden">
+            <SideNav dict={dict} lang={params.lang} />
           </div>
           <main>
             {children}

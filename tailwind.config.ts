@@ -34,12 +34,22 @@ const config: Config = {
     },
     animation: {
       "infinite-translate": "translate 3s linear infinite both",
+      "hide": "hide 3s linear both",
+      "show": "show 3s linear both",
     },
     keyframes: {
       translate: {
         "0%": { transform: "translate(20%)" },
         "100%": { transform: "translate(-105%)" },
       },
+
+      hide: {
+        "100%": { transform: "translate(-105%)" },
+      },
+
+      show: {
+        "100%": { transform: "translate(0%)" },
+      }
     },
   },
   plugins: [require("flowbite/plugin"), require("tailwindcss-animated")],

@@ -7,8 +7,9 @@ import Link from 'next/link'
 import { useRouter } from "next/navigation";
 import { IconSquareX } from '@tabler/icons-react';
 import { Dict } from "@/dictionaries/types";
+import LanguageDropMenu from "./LanguageDropMenu";
 
-export default function SideNav({ dict }: { dict: Dict }) {
+export default function SideNav({ dict, lang }: { dict: Dict, lang: string }) {
     const { active, toggleActive } = useSidebar()
     const router = useRouter()
 
@@ -33,8 +34,9 @@ export default function SideNav({ dict }: { dict: Dict }) {
                     />
                     <p className="">{dict.navLinks.bienvenido}</p>
                     <hr className="mt-2 mb-6" />
-                    <NavLinks handleClick={toggleActive} dict={dict} />
+                    <NavLinks handleClick={toggleActive} dict={dict} lang={lang} />
                     <hr className="mt-6 mb-6" />
+                    <LanguageDropMenu />
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">
                     <a href="https://instagram.com/dgranatapas" target="_blank">Instagram</a>
