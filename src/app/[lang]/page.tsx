@@ -12,7 +12,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
 
   return (
     <>
-      <HomeSection dict={dict} />
+      <HomeSection dict={dict} lang={lang} />
 
       <ContactSection dict={dict} />
 
