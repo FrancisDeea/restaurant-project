@@ -7,6 +7,7 @@ import SideNav from '@/components/sidenav'
 import Footer from '@/components/Footer'
 
 import { SidebarContextProvider } from '../../state/sidebarContext'
+import { CartContextProvider } from '../../state/cartContext'
 
 import { getDictionary } from './dictionaries'
 import { Dict } from '@/dictionaries/types'
@@ -40,16 +41,18 @@ export default async function RootLayout({
   return (
     <html lang={`${params.lang}`}>
       <body className={montserrat.className}>
-        <SidebarContextProvider>
-          <Header dict={dict} lang={params.lang} />
-          <div className="flex justify-center items-center lg:hidden">
-            <SideNav dict={dict} lang={params.lang} />
-          </div>
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </SidebarContextProvider>
+        <CartContextProvider>
+          <SidebarContextProvider>
+            <Header dict={dict} lang={params.lang} />
+            <div className="flex justify-center items-center lg:hidden">
+              <SideNav dict={dict} lang={params.lang} />
+            </div>
+            <main>
+              {children}
+            </main>
+            <Footer />
+          </SidebarContextProvider>
+        </CartContextProvider>
       </body>
     </html >
   )

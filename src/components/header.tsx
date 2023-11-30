@@ -5,6 +5,7 @@ import ToggleButton from "./toggleButton";
 
 import { Dict } from "@/dictionaries/types";
 import LanguageDropMenu from "./LanguageDropMenu";
+import Cart from "./Cart";
 
 export default function Header({ dict, lang }: { dict: Dict, lang: string }) {
 
@@ -21,12 +22,14 @@ export default function Header({ dict, lang }: { dict: Dict, lang: string }) {
                 <NavLinks dict={dict} lang={lang} />
             </div>
 
-            <div className="hidden lg:block">
+            <div className="hidden lg:flex lg:flex-row lg:gap-6">
                 <LanguageDropMenu />
+                <Cart />
             </div>
 
-            <div className="lg:hidden">
+            <div className="flex flex-row item-center justify-center gap-4 lg:hidden">
                 <ToggleButton />
+                <Cart />
             </div>
         </header>
     )

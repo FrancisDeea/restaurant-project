@@ -7,6 +7,8 @@ export default function ToggleButton() {
     const { toggleActive } = useSidebar()
 
     return (
-        <IconMenu onClick={toggleActive} />
+        <button onClick={toggleActive}>
+            <IconMenu />
+        </button>
     )
 }
