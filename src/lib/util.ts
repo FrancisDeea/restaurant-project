@@ -70,6 +70,31 @@ export function findAllergens(allergen: string) {
   };
 }
 
+export const translateAllergen = (allergen: string) => {
+  switch(allergen) {
+    case "cascara":
+      return "Shell";
+    case "mostaza":
+      return "Mustard";
+    case "sesamo":
+      return "Sesame";
+    case "lacteo":
+      return "Milk";
+    case "sulfito":
+      return "Sulfites";
+    case "gluten":
+      return "Gluten";
+    case "soja":
+      return "Soy";
+    case "crustaceo":
+      return "Crustacean";
+    case "pescado":
+      return "Fish";
+    case "huevo":
+      return "Eggs";
+  }
+}
+
 export const urlDasher = (name: string): string => {
   return name.toLowerCase().replaceAll(/\s/g, "-");
 };

@@ -1,17 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { useState, useContext } from 'react'
-import { findAllergens } from '@/lib/util'
+import { findAllergens, translateAllergen } from '@/lib/util'
 import { IconSquareX } from '@tabler/icons-react'
 import { CartContext } from '@/state/cartContext'
 
-export default function DinamicPlateInfo({ name, allergens }: { name: string, allergens: string[] | null }) {
+export default function DinamicPlateInfo({ name, allergens, lang }: { name: string, allergens: string[] | null, lang: string }) {
     const [modal, setModal] = useState(false)
     const [state, dispatch] = useContext(CartContext)
 
     const productQuantity = state.find((product: { name: string, quantity: number }) => product.name === name)?.quantity ?? 0
-
-    console.log(state)
 
     const show = modal ? 'animate-jump-in flex justify-center items-center' : 'hidden'
 
@@ -42,6 +40,7 @@ export default function DinamicPlateInfo({ name, allergens }: { name: string, al
                     {
                         allergens?.map(allergen => {
                             const { src, alt } = findAllergens(allergen)
+                            const name = lang === 'en' ? translateAllergen(allergen) : allergen[0].toUpperCase() + allergen.split("").slice(1).join("")
                             return (
                                 <li key={allergen}>
                                     <img
@@ -52,7 +51,7 @@ export default function DinamicPlateInfo({ name, allergens }: { name: string, al
                                         height={35}
                                         className="inline-block mr-2 "
                                     />
-                                    {allergen}
+                                    {name}
                                 </li>
 
                             )

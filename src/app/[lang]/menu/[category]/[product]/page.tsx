@@ -34,6 +34,7 @@ export default function ProductPage({ params }: { params: { category: string, pr
                 price={price}
                 description={description}
                 allergens={allergens}
+                lang={params.lang}
             />
         </>
     )

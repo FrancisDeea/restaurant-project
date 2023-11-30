@@ -63,5 +63,9 @@
         "cafe_tipos": "Solo, cortado, con leche, manchada",
         "bombon": "Bombón o carajillo",
         "te": "Té o infusión"
+    },
+
+    "alergenos": {
+        "sesamo": "sesamo"
     }
 }

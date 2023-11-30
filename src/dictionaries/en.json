@@ -63,5 +63,9 @@
         "cafe_tipos": "Black coffee, expresso machiatto, with milk",
         "bombon": "Bombon coffee",
         "te": "Tea or infusion"
+    },
+
+    "alergenos": {
+        "sesamo": "sesame"
     }
 }

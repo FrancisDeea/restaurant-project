@@ -9,9 +9,10 @@ interface Plate {
     price: string;
     description: string | null;
     allergens: string[] | null;
+    lang: string
 }
 
-export default function FullCardPlate({ img, alt, name, price, description, allergens }: Plate) {
+export default function FullCardPlate({ img, alt, name, price, description, allergens, lang }: Plate) {
 
     return (
         <article className="w-full max-w-[396px] h-[calc(100vh-96px)] bg-black rounded-[40px] overflow-hidden place-self-center lg:col-start-2 relative">
@@ -26,7 +27,7 @@ export default function FullCardPlate({ img, alt, name, price, description, alle
             <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%]">
                 <h3 className="text-xl text-center">{name} <span className="">{price}€</span></h3>
                 <p>{description}</p>
-                <DinamicPlateInfo name={name} allergens={allergens} />
+                <DinamicPlateInfo name={name} allergens={allergens} lang={lang} />
             </div>
         </article>
     )
