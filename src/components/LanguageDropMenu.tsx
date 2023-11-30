@@ -10,7 +10,8 @@ export default function LanguageDropMenu() {
     const currentPath = usePathname()
     const router = useRouter()
 
-    const langStyle = show ? 'animate-fade-down block' : 'hidden'
+    const initial = !show ? 'animate-fade block' : 'animate-jump-out hidden'
+    const langStyle = show ? 'animate-jump-in block' : 'hidden'
 
 
     const handleLang = (e: React.MouseEvent) => {
@@ -27,13 +28,32 @@ export default function LanguageDropMenu() {
 
     return (
         <>
-            <div className="flex flex-row items-center cursor-pointer relative">
-                <div onClick={() => setShow(!show)} className={`flex flex-row items-center justify-center gap-1 bg-medium px-3 py-1 w-[150px] rounded-full font-extrabold`}>
+            <div className="flex flex-row items-center justify-center cursor-pointer bg-purple-700 px-3 py-1 w-[150px] min-w-max h-8 rounded-full font-extrabold">
+                <div onClick={() => setShow(!show)} className={`${initial} flex flex-row items-center justify-center gap-1`}>
                     <span>Idioma</span>
                     <IconCircleArrowDownFilled size={20} />
                 </div>
 
-                <div className={`flex flex-col gap-1 min-w-[130px] ${langStyle} animate-duration-200 absolute top-10 left-0 z-20 bg-slate-100 rounded-md text-slate-800 overflow-hidden`}>
+                <div className={`${langStyle} flex flex-row items-center justify-center gap-1 w-full`}>
+
+                    <button
+                        onClick={(e) => handleLang(e)}
+                        value="/es"
+                        className='px-1'
+                    >
+                        🇪🇸 ES
+                    </button>
+                    <span>/</span>
+                    <button
+                        onClick={(e) => handleLang(e)}
+                        value="/en"
+                        className='px-1'
+                    >
+                        🇬🇧 EN
+                    </button>
+                </div>
+
+                {/* <div className={`flex flex-col gap-1 w-[150px] ${langStyle} animate-duration-200 absolute top-12 left-0 z-20 bg-slate-100 rounded-md text-slate-800 overflow-hidden`}>
                     <button
                         onClick={(e) => handleLang(e)}
                         value="/es"
@@ -48,7 +68,7 @@ export default function LanguageDropMenu() {
                     >
                         🇬🇧 Inglés
                     </button>
-                </div>
+                </div> */}
             </div>
         </>
     );
