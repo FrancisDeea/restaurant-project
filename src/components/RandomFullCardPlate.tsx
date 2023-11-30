@@ -26,7 +26,7 @@ export default function RandomFullCardPlate({ img, alt, name, price, description
                     loading="lazy"
                 />
             </div>
-            <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%]">
+            <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%] absolute">
                 <h3 className="text-xl text-center">{name} <span className="">{price}€</span></h3>
                 <p>{description}</p>
                 <DinamicPlateInfo name={name} allergens={allergens} lang={lang} />
