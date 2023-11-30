@@ -23,7 +23,7 @@ export default function Header({ dict, lang }: { dict: Dict, lang: string }) {
             </div>
 
             <div className="hidden lg:flex lg:flex-row lg:gap-6">
-                <LanguageDropMenu />
+                <LanguageDropMenu lang={lang} />
                 <Cart />
             </div>
 

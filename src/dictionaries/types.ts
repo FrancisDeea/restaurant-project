@@ -5,7 +5,7 @@ export interface Dict {
   navLinks: NavLinks;
   categories: Categories;
   drinkSection: DrinkSection;
-  alergenos: Allergens;
+  alergenos: Others;
 }
 
 export interface HomeSection {
@@ -74,6 +74,7 @@ export interface DrinkSection {
   te: string;
 }
 
-export interface Allergens {
-  sesamo: string;
+export interface Others {
+  alergenos: string;
+  añadir: string;
 }

@@ -36,7 +36,7 @@ export default function SideNav({ dict, lang }: { dict: Dict, lang: string }) {
                     <hr className="mt-2 mb-6" />
                     <NavLinks handleClick={toggleActive} dict={dict} lang={lang} />
                     <hr className="mt-6 mb-6" />
-                    <LanguageDropMenu />
+                    <LanguageDropMenu lang={lang} />
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">
                     <a href="https://instagram.com/dgranatapas" target="_blank">Instagram</a>

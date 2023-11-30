@@ -5,7 +5,7 @@ import { IconCircleArrowDownFilled } from '@tabler/icons-react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
-export default function LanguageDropMenu() {
+export default function LanguageDropMenu({ lang }: { lang: string }) {
     const [show, setShow] = useState(false)
     const currentPath = usePathname()
     const router = useRouter()
@@ -30,7 +30,7 @@ export default function LanguageDropMenu() {
         <>
             <div className="flex flex-row items-center justify-center cursor-pointer bg-purple-700 px-3 py-1 w-[150px] min-w-max h-8 rounded-full font-extrabold">
                 <div onClick={() => setShow(!show)} className={`${initial} flex flex-row items-center justify-center gap-1`}>
-                    <span>Idioma</span>
+                    <span>{lang === 'en' ? 'Idioma' : 'Language'}</span>
                     <IconCircleArrowDownFilled size={20} />
                 </div>
 

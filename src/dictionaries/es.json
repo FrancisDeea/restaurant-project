@@ -65,7 +65,8 @@
         "te": "Té o infusión"
     },
 
-    "alergenos": {
-        "sesamo": "sesamo"
+    "otros": {
+        "alergenos": "Alérgenos",
+        "añadir": "Añadir"
     }
 }
