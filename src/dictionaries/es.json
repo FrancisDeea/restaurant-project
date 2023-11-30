@@ -38,5 +38,30 @@
         "hamburguesas": "Hamburguesas",
         "postres": "Postres",
         "bebidas": "Bebidas"
+    },
+
+    "drinkSection": {
+        "title": "Bebidas",
+        "refrescos": "Refrescos",
+        "fanta": "Fanta naranja / limón",
+        "nestea": "Nestea limón / maracuya",
+        "tonica": "Tónica",
+        "tinto_verano_1": "Tinto de verano 'La Casera'",
+        "tinto_verano_2": "Tinto de verano casero (limón o blanca)",
+        "tinto_verano_3": "Maceta grande de tinto verano casero",
+        "vino_tinto": "Vino Tinto",
+        "vino_blanco": "Vino Blanco",
+        "cerveza_grifo": "Cerveza Alhambra (Grifo)",
+        "caña": "Caña",
+        "copa": "Copa",
+        "pinta": "Pinta/Maceta",
+        "bottle": "Tercios de cerveza",
+        "radler": "Radler (con limón)",
+        "gluten": "San Miguel sin gluten",
+        "copas": "Copas/Combinados",
+        "cafe": "Café y té",
+        "cafe_tipos": "Solo, cortado, con leche, manchada",
+        "bombon": "Bombón o carajillo",
+        "te": "Té o infusión"
     }
 }

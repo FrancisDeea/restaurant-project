@@ -1,4 +1,9 @@
-export default function Bebidas() {
+import { getDictionary } from "../../dictionaries"
+import type { Dict } from "@/dictionaries/types"
+
+export default async function Bebidas({ params: { lang } }: { params: { lang: string } }) {
+    const dict: Dict = await getDictionary(lang)
+    const drinks = dict.drinkSection
 
     return (
         <>
@@ -6,12 +11,12 @@ export default function Bebidas() {
                 <div className="flex flex-col gap-2 p-2 w-full lg:gap-8">
 
                     <header>
-                        <h1>Bebidas</h1>
+                        <h1>{drinks.title}</h1>
                     </header>
 
                     <div className="w-full">
-                        <h2 className="text-left text-amber-200">Refrescos</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.refrescos}</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
@@ -26,7 +31,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Fanta naranja / limón
+                                {drinks.fanta}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -36,7 +41,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Nestea limón / Maracuya
+                                {drinks.nestea}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -46,7 +51,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Tónica
+                                {drinks.tonica}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -56,7 +61,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Tinto de verano &quot;La Casera&quot;
+                                {drinks.tinto_verano_1}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -66,7 +71,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Tinto de verano casero (limón o blanca)
+                                {drinks.tinto_verano_2}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -76,7 +81,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Maceta grande de tinto verano casero
+                                {drinks.tinto_verano_3}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -86,7 +91,7 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Vino Tinto</h2>
+                        <h2 className="text-left text-amber-200">{drinks.vino_tinto}</h2>
                         <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
                         <article className="w-full">
@@ -111,8 +116,8 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Vino Blanco</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.vino_blanco}</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
@@ -137,13 +142,13 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Cerveza Alhambra (Grifo)</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.cerveza_grifo})</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Caña
+                                {drinks.caña}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -153,7 +158,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Copa
+                                {drinks.copa}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -163,7 +168,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Pinta/Maceta
+                                {drinks.pinta}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -173,8 +178,8 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Tercios de Cerveza</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.bottle}</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
@@ -219,7 +224,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Radler (con limón)
+                                {drinks.radler}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -239,7 +244,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                San Miguel sin gluten
+                                {drinks.gluten}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -249,8 +254,8 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Copas/Combinados</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.copas}</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
@@ -275,13 +280,13 @@ export default function Bebidas() {
                     </div>
 
                     <div>
-                        <h2 className="text-left text-amber-200">Café y té</h2>
-                                                <hr className="border-none h-[1px] bg-amber-100 mb-2" />
+                        <h2 className="text-left text-amber-200">{drinks.cafe}</h2>
+                        <hr className="border-none h-[1px] bg-amber-100 mb-2" />
 
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Solo, cortado, con leche, manchada
+                                {drinks.cafe_tipos}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -291,7 +296,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Bombón o carajillo
+                                {drinks.bombon}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">
@@ -301,7 +306,7 @@ export default function Bebidas() {
 
                         <article className="w-full">
                             <p className="w-[80%] inline-block">
-                                Té o infusion
+                                {drinks.te}
                             </p>
 
                             <p className="w-[20%] inline-block text-right">

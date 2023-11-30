@@ -38,5 +38,30 @@
         "hamburguesas": "Burguers",
         "postres": "Desserts",
         "bebidas": "Drinks"
+    },
+
+    "drinkSection": {
+        "title": "Drinks",
+        "refrescos": "Soft Drinks",
+        "fanta": "Fanta orange / lemon",
+        "nestea": "Nestea lemon / maracuya",
+        "tonica": "Tonic",
+        "tinto_verano_1": "Summer red wine 'La Casera'",
+        "tinto_verano_2": "Homemade summer red wine (lemon or white)",
+        "tinto_verano_3": "Big homemade summer red wine",
+        "vino_tinto": "Red Wine",
+        "vino_blanco": "White Wine",
+        "cerveza_grifo": "Alhambra Beer (Tap)",
+        "caña": "Small beer (caña)",
+        "copa": "Medium beer",
+        "pinta": "Big beer (pinta)",
+        "bottle": "Bottle beers (330ml)",
+        "radler": "Radler (with lemon)",
+        "gluten": "San Miguel gluten free",
+        "copas": "Mixed Drinks",
+        "cafe": "Coffee and Tea",
+        "cafe_tipos": "Black coffee, expresso machiatto, with milk",
+        "bombon": "Bombon coffee",
+        "te": "Tea or infusion"
     }
 }
