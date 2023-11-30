@@ -32,7 +32,7 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
             </button>
 
 
-            <div className='absolute top-0 left-0 right-0 bg-medium h-8 flex items-center justify-center'>
+            <div className='absolute top-[-30px] left-0 right-0 bg-medium h-8 flex items-center justify-center'>
                 <p className='text-center text-sm underline'>{info}</p>
             </div>
 

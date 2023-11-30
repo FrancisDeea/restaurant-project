@@ -39,6 +39,7 @@ export default function RandomProduct({ params: { lang } }: { params: { lang: st
                 description={description}
                 allergens={product.allergens}
                 handleIndex={handleIndex}
+                lang={lang}
             />
         </>
     )
