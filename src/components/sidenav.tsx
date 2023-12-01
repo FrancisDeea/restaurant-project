@@ -40,7 +40,7 @@ export default function SideNav({ dict, lang }: { dict: Dict, lang: string }) {
                 </div>
                 <div className="flex flex-col gap-2 text-2xl">
                     <a href="https://instagram.com/dgranatapas" target="_blank">Instagram</a>
-                    <a href="https://facebook.com/dgranatapas" target="_blank">Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=100042860184480" target="_blank">Facebook</a>
                 </div>
 
             </aside>

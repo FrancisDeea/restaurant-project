@@ -15,8 +15,8 @@ interface Plate {
 export default function FullCardPlate({ img, alt, name, price, description, allergens, lang }: Plate) {
 
     return (
-        <article className="w-full max-w-[396px] h-[calc(100vh-96px)] bg-black rounded-[40px] overflow-hidden place-self-center lg:col-start-2 relative">
-            <div className="h-[60%] w-full overflow-hidden">
+        <article className="w-full max-w-[396px] min-h-[calc(100vh-196px)] lg:min-h-[calc(100vh-148px)] h-full bg-black rounded-[40px] overflow-hidden place-self-center lg:col-start-2 relative">
+            <div className="h-[400px] w-full overflow-hidden">
                 <img
                     className="h-full w-full object-cover"
                     alt={alt}
@@ -24,9 +24,9 @@ export default function FullCardPlate({ img, alt, name, price, description, alle
                     loading="lazy"
                 />
             </div>
-            <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%]">
+            <div className="py-12 px-8 flex flex-col items-center justify-center gap-4 w-full min-h-max h-[calc(100%-400px)]">
                 <h3 className="text-xl text-center">{name} <span className="">{price}€</span></h3>
-                <p>{description}</p>
+                {description ? <p>{description}</p> : null}
                 <DinamicPlateInfo name={name} allergens={allergens} lang={lang} />
             </div>
         </article>

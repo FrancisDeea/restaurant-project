@@ -109,7 +109,7 @@ main {
   grid-template-columns: minmax(100%, 1fr);
   margin: auto;
   max-width: 1300px;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 192px);
   padding: 1rem;
 }
 
@@ -121,5 +121,6 @@ main > section {
 @media screen and (min-width: 1024px) {
   main {
     grid-template-columns: repeat(3, 1fr);
+    min-height: calc(100vh - 116px);
   }
 }

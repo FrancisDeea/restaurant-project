@@ -413,7 +413,7 @@ export const socialNetworks = [
     value_es: "Facebook",
     value_en: "Facebook",
     color: `bg-blue-500`,
-    url: "https://www.facebook.com/dgranatapas",
+    url: "https://www.facebook.com/profile.php?id=100042860184480",
     icon: FacebookIcon
   },
 
