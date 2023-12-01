@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { findAllergens, translateAllergen } from '@/lib/util'
 import { IconSquareX } from '@tabler/icons-react'
 import { CartContext } from '@/state/cartContext'
@@ -14,6 +14,10 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
 
     const show = modal ? 'animate-fade animate-duration-200 flex justify-center items-center' : 'hidden'
     const info = lang === 'en' ? `You have ${productQuantity} in your order` : `Tienes ${productQuantity} en tu pedido`
+
+    useEffect(() => {
+        setModal(false)
+    }, [name])
 
     return (
         <div className="w-full flex flex-row justify-center gap-2">
@@ -36,8 +40,8 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
                 <p className='text-center text-sm underline'>{info}</p>
             </div>
 
-            <div className={`absolute bg-gray-900/90 inset-0 ${show}`}>
-                <IconSquareX onClick={() => setModal(!modal)} className="absolute top-6 right-6" size={38} />
+            <div className={`absolute bg-gray-900/90 inset-0 ${show} z-50`} onClick={() => setModal(false)}>
+                <IconSquareX onClick={() => setModal(!modal)} className="absolute top-10 right-10" size={38} />
                 <ul className="flex flex-col gap-4">
                     {
                         allergens?.map(allergen => {
