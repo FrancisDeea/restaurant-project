@@ -7,10 +7,10 @@ export default function NavLinks({ handleClick, dict, lang }: { handleClick?: ()
         <nav>
             <ul className="list-none flex flex-col gap-4 font-extrabold text-medium text-xl lg:flex-row lg:gap-8 lg:text-light">
 
-                <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}`}>{dict.navLinks.home}</Link></li>
-                <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}/menu`}>{dict.navLinks.carta}</Link></li>
-                <li className="hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}/#contact`}>{dict.navLinks.contacto}</Link></li>
-                <li className="hover:scale-125 transition-transform text-green-400"><Link onClick={handleClick} href={`/${lang}/sorprendeme`}>{dict.navLinks.sorprendeme}</Link></li>
+                <li className="lg:hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}`}>{dict.navLinks.home}</Link></li>
+                <li className="lg:hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}/menu`}>{dict.navLinks.carta}</Link></li>
+                <li className="lg:hover:scale-125 transition-transform"><Link onClick={handleClick} href={`/${lang}/#contact`}>{dict.navLinks.contacto}</Link></li>
+                <li className="lg:hover:scale-125 transition-transform text-green-400"><Link onClick={handleClick} href={`/${lang}/sorprendeme`}>{dict.navLinks.sorprendeme}</Link></li>
             </ul>
         </nav>
     )
