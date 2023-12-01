@@ -3,9 +3,7 @@
 import RandomFullCardPlate from "@/components/RandomFullCardPlate"
 import { allPlatesInArray, getRandomIndex } from "@/lib/util"
 import { menu } from "@/lib/data"
-import { useRouter } from "next/navigation"
 import { useEffect, useState, useCallback } from "react"
-import { unstable_noStore as noStore } from "next/cache"
 import Loading from "./loading"
 
 export default function RandomProduct({ params: { lang } }: { params: { lang: string } }) {

@@ -24,7 +24,7 @@ export default function FullCardPlate({ img, alt, name, price, description, alle
                     loading="lazy"
                 />
             </div>
-            <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%] absolute">
+            <div className="py-6 px-8 flex flex-col items-center justify-center gap-4 w-full h-[40%]">
                 <h3 className="text-xl text-center">{name} <span className="">{price}€</span></h3>
                 <p>{description}</p>
                 <DinamicPlateInfo name={name} allergens={allergens} lang={lang} />

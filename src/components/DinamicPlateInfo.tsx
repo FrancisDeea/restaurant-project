@@ -12,7 +12,7 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
 
     const productQuantity = state.find((product: { name: string, quantity: number }) => product.name === name)?.quantity ?? 0
 
-    const show = modal ? 'animate-jump-in flex justify-center items-center' : 'hidden'
+    const show = modal ? 'animate-fade animate-duration-200 flex justify-center items-center' : 'hidden'
     const info = lang === 'en' ? `You have ${productQuantity} in your order` : `Tienes ${productQuantity} en tu pedido`
 
     return (
@@ -32,7 +32,7 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
             </button>
 
 
-            <div className='absolute top-[-15px] left-0 right-0 bg-medium h-8 flex items-center justify-center'>
+            <div className='absolute top-[58%] left-0 right-0 bg-medium h-8 flex items-center justify-center'>
                 <p className='text-center text-sm underline'>{info}</p>
             </div>
 
