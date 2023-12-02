@@ -4,8 +4,8 @@ import { Menu } from "./definitions";
 export const menu: Menu = {
   ensaladas: [
     {
-      name_es: "Beicon",
-      name_en: "Bacon",
+      name_es: "Ensalada Beicon",
+      name_en: "Bacon Salad",
       price: "9",
       description_es: "Mix de lechugas, medallón de beicon y queso de cabra, frutos secos y salsa de miel y mostaza.",
       description_en: "Mixed lettuce, bacon and goat cheese medallion, nuts and honey mustard sauce.",
@@ -15,8 +15,8 @@ export const menu: Menu = {
     },
 
     {
-      name_es: "Cesar",
-      name_en: "Cesar",
+      name_es: "Ensalada Cesar",
+      name_en: "Cesar Salad",
       price: "9",
       description_es: "Mix de lechugas, pollo, picatostes y escamas de parmesano.",
       description_en: "Mix of lettuce, chicken, croutons and parmesan flakes.",
@@ -331,8 +331,8 @@ export const menu: Menu = {
 
   hamburguesas: [
     {
-      name_es: "Ternera y buey (200gr)",
-      name_en: "Beef (200gr)",
+      name_es: "Hamburguesa Ternera y buey (200gr)",
+      name_en: "Beef burguer(200gr)",
       price: "10.50",
       description_es: "Queso de cabra, cebolla caramelizada, acompañada de papas.",
       description_en: "Goat cheese, caramelized onion, accompanied by potatoes.",
@@ -342,8 +342,8 @@ export const menu: Menu = {
     },
 
     {
-      name_es: "Angus (200gr)",
-      name_en: "Angus (200gr)",
+      name_es: "Hamburguesa Angus (200gr)",
+      name_en: "Angus burguer (200gr)",
       price: "12.50",
       description_es: "Doble de beicon, queso cheddar, mix de lechugas y cebolla crunchy.",
       description_en: "Double bacon, Cheddar cheese, Mix of lettuce and crunchy onion.",
