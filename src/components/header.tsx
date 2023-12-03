@@ -24,12 +24,12 @@ export default function Header({ dict, lang }: { dict: Dict, lang: string }) {
 
             <div className="hidden lg:flex lg:flex-row lg:gap-6">
                 <LanguageDropMenu lang={lang} />
-                <Cart />
+                <Cart lang={lang} />
             </div>
 
             <div className="flex flex-row item-center justify-center gap-4 lg:hidden">
                 <ToggleButton />
-                <Cart />
+                <Cart lang={lang} />
             </div>
         </header>
     )

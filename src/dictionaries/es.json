@@ -65,6 +65,12 @@
         "te": "Té o infusión"
     },
 
+    "pedidoSection": {
+        "title": "Mi Pedido",
+        "description": "No hay ningún producto en tu pedido. ¡Añade alguno!",
+        "menu": "Ver Menú"
+    },
+
     "otros": {
         "alergenos": "Alérgenos",
         "añadir": "Añadir"

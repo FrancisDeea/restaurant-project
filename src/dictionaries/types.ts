@@ -6,6 +6,7 @@ export interface Dict {
   categories: Categories;
   drinkSection: DrinkSection;
   alergenos: Others;
+  pedidoSection: PedidoSection;
 }
 
 export interface HomeSection {
@@ -72,6 +73,12 @@ export interface DrinkSection {
   cafe_tipos: string;
   bombon: string;
   te: string;
+}
+
+export interface PedidoSection {
+  title: string;
+  description: string;
+  menu: string;
 }
 
 export interface Others {

@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { useState, useContext, useEffect } from 'react'
+import Link from 'next/link'
+
 import { findAllergens, translateAllergen } from '@/lib/util'
 import { IconSquareX } from '@tabler/icons-react'
 import { CartContext } from '@/state/cartContext'
-import DinamicTextSection from './DinamicTextSection'
 
 export default function DinamicPlateInfo({ name, allergens, lang }: { name: string, allergens: string[] | null, lang: string }) {
     const [modal, setModal] = useState(false)
@@ -37,7 +38,7 @@ export default function DinamicPlateInfo({ name, allergens, lang }: { name: stri
 
 
             <div className='absolute top-[390px] left-0 right-0 bg-medium h-8 flex items-center justify-center'>
-                <p className='text-center text-sm underline'>{info}</p>
+                <Link href={`/${lang}/pedido`}><p className='text-center text-sm underline'>{info}</p></Link>
             </div>
 
             <div className={`absolute bg-gray-900/90 inset-0 ${show} z-50`} onClick={() => setModal(false)}>

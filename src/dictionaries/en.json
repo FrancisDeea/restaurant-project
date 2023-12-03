@@ -65,6 +65,12 @@
         "te": "Tea or infusion"
     },
 
+    "pedidoSection": {
+        "title": "My Order",
+        "description": "There are no products in your order. Add one!",
+        "menu": "See Menu"
+    },
+
     "otros": {
         "alergenos": "Allergens",
         "añadir": "Add"

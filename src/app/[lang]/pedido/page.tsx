@@ -1,36 +1,15 @@
-'use client'
 
-import { useContext } from "react"
-import { CartContext } from "@/state/cartContext"
-import ItemCart from '@/components/ItemCart'
+import Order from "@/components/Order";
+import { getDictionary } from "../dictionaries";
+import type { Dict } from "@/dictionaries/types";
 
-export interface Product {
-    name: string;
-    quantity: number;
-}
-
-export default function Pedido() {
-    const [state, dispatch] = useContext(CartContext)
-    const empty = state.length === 0
-    console.log(state)
+export default async function Pedido({ params: { lang } }: { params: { lang: string } }) {
+    const dict: Dict = await getDictionary(lang);
 
     return (
         <section className="col-span-full bg-black/50 min-h-[calc(100vh-196px)] lg:min-h-[calc(100vh-148px)]">
-            <h1 className="mb-4">Mi Pedido</h1>
-            <div>
-                <ul className="flex flex-col gap-4">
-                    {
-                        empty
-                            ? "No hay ningún producto en tu pedido. ¡Añade alguno!"
-                            : state.map((product: Product) => {
-                                return (
-                                    <ItemCart key={product.name} product={product} dispatch={dispatch} />
-                                )
-                            })
-
-                    }
-                </ul>
-            </div>
+            <h1 className="mb-4">{dict.pedidoSection.title}</h1>
+            <Order dict={dict} lang={lang} />
         </section>
     )
 }
