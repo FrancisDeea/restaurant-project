@@ -16,6 +16,7 @@ export interface Product {
 export default function Order({ dict, lang }: { dict: Dict, lang: string }) {
     const [state, dispatch] = useContext(CartContext)
     const empty = state.length === 0
+
     console.log(state)
 
     return (

@@ -1,6 +1,7 @@
 import { Menu, Plate } from "./definitions";
 
-export const getRandomIndex = (max: number): number => Math.floor(Math.random() * max)
+export const getRandomIndex = (max: number): number =>
+  Math.floor(Math.random() * max);
 
 export const allPlatesInArray = (obj: Menu): Plate[] => {
   let result: Plate[] = [];
@@ -71,7 +72,7 @@ export function findAllergens(allergen: string) {
 }
 
 export const translateAllergen = (allergen: string) => {
-  switch(allergen) {
+  switch (allergen) {
     case "cascara":
       return "Shell";
     case "mostaza":
@@ -93,8 +94,27 @@ export const translateAllergen = (allergen: string) => {
     case "huevo":
       return "Eggs";
   }
-}
+};
 
 export const urlDasher = (name: string): string => {
   return name.toLowerCase().replaceAll(/\s/g, "-");
+};
+
+export interface Product {
+  name: string;
+  quantity: number;
+}
+
+export type Order = Product[];
+
+export const saveSessionStorage = (order: Order) => {
+  sessionStorage.setItem("order", JSON.stringify(order));
+};
+
+export const getSessionStorage = () => {
+  const orderJSON = sessionStorage.getItem("order");
+  if (orderJSON) {
+    const order = JSON.parse(orderJSON);
+    return order;
+  }
 };
